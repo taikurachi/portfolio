@@ -1,0 +1,29 @@
+.next__project {
+  padding: 30px 60px 30px 60px;
+  font-size: 3rem;
+  border: none;
+  border-radius: 25px;
+  background: var(--light-blue);
+  color: white;
+}
+
+.next__project p {
+  width: 300px;
+}
+
+.next__btn {
+  padding-bottom: 10rem;
+}
+@media screen and (max-width: 600px) {
+  .next__project {
+    padding: 30px 40px 30px 40px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    background: var(--light-blue);
+    color: white;
+  }
+  .next__project p {
+    width: 100px;
+  }
+}
