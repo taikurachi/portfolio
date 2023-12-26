@@ -1,0 +1,195 @@
+.contact {
+  display: flex;
+  justify-content: center;
+}
+.contact__container {
+  width: 100%;
+  margin: 0rem 10rem 10rem 10rem;
+  max-width: 1600px;
+}
+.contact__header {
+  margin: -3rem 10rem 11rem 0rem;
+  /* border: 2px solid red; */
+  position: relative;
+  top: 100px;
+  white-space: nowrap;
+  width: min-content;
+}
+
+.underlined__header {
+  position: relative;
+  width: min-content;
+}
+
+.underlined__header::after {
+  content: "";
+  width: 100%;
+  height: 10px;
+  position: absolute;
+  left: 0;
+  top: 130px;
+  background: lightblue;
+}
+
+.contact__content {
+  /* margin: 10rem; */
+  display: flex;
+  gap: 10rem;
+}
+
+.contact__col {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  width: 100%;
+}
+
+.contact__box {
+  width: 100%;
+  border: 1.5px solid black;
+  border-radius: 30px;
+}
+
+.contact__details {
+  margin: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact__info {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid black;
+  background: none;
+  padding: 10px;
+  font-size: 1.5rem;
+}
+
+.contact__name {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.contact__name p {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.contact__email {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.contact__email p {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.contact__message {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.contact__message p {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.messageBox {
+  height: 300px;
+  border-radius: 20px;
+  border: 1px solid black;
+  background: none;
+  padding: 10px;
+  font-size: 1.5rem;
+}
+
+.submit__btn {
+  align-self: flex-end;
+}
+
+.submit__btn button {
+  padding: 15px 25px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 15px;
+  border: none;
+  background: lightgreen;
+}
+
+.spotify__content {
+  display: flex;
+  gap: 1rem;
+
+  margin: 10px 20px;
+}
+.spotify__container {
+  width: 80%;
+  min-width: 270px;
+  height: 80px;
+  border-radius: 30px;
+  background: rgba(211, 218, 255, 0.45);
+}
+
+.links__col {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.spotifyImg__container {
+  width: 45px;
+  position: relative;
+  top: 8px;
+}
+.spotify__img {
+  width: 100%;
+}
+
+.spotifyText__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.3rem;
+  /* border: 1px solid red; */
+  height: 60px;
+}
+
+.songTitle {
+  font-weight: 700;
+}
+.links__content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.links__items {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  font-size: 2rem;
+}
+
+.links {
+  width: min-content;
+}
+
+.links__items .links::after {
+  content: "";
+  background: lightcoral;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  width: 0;
+  top: 48px;
+  transition: width 0.1s ease;
+}
+
+.links__items .links:hover::after {
+  width: 100%;
+}

@@ -4,8 +4,231 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    hello this is my porfolio
+    <!-- NAVBAR -->
+    <section class="navbar">
+      <div class="navbar__container">
+        <a href="#about" class="navbar__items links">about</a>
+        <a href="#contact" class="navbar__items links">contacts</a>
+        <a href="#projects" class="navbar__items links">projects</a>
+      </div>
+    </section>
+
+    <!-- HERO  -->
+    <section class="hero">
+      <div class="hero__content">
+        <div class="topRow">
+          <p class="hi">Hi</p>
+          <p class="name">I'm Taisei Kurachi</p>
+        </div>
+        <div class="horizontalLine"></div>
+        <div class="bottomRow">
+          <p class="jobTitle">Designer & Developer</p>
+          <p class="location">Based in New York City</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="about__content">
+        <div class="profileImg__container">
+          <div class="profileImg__crop">
+            <img class="profileImg" src="images/taiseiProfile.JPG" alt="" />
+          </div>
+        </div>
+        <div class="verticalLine"></div>
+        <div class="aboutText__container">
+          <div class="text__header mobileText__header aboutText__header">
+            About me
+          </div>
+          <div class="about__description">
+            I thrive on creating simple, but effective modern looking designs
+            and applications.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects" id="projects">
+      <div class="project__content">
+        <div class="text__header mobileText__header">
+          Here are some of my projects
+        </div>
+
+        <div class="project__container">
+          <a href="stashIt/index.html" class="project__links"
+            ><div class="project__item stashIt">
+              <div class="project__details">
+                <div class="project__text">
+                  <p class="project__title">WEBSITE</p>
+                  <p class="project__name">STASH IT</p>
+                </div>
+                <div class="projectImg__container">
+                  <img src="images/stashIt.png" class="project__img" alt="" />
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="gmb/index.html" class="project__links">
+            <div class="project__item gmb">
+              <div class="project__details">
+                <div class="project__text">
+                  <p class="project__title">FREELANCE</p>
+                  <p class="project__name">GMB</p>
+                </div>
+                <div class="projectImg__container">
+                  <img src="images/gmb.png" class="project__img" alt="" />
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="colorz/index.html" class="project__links">
+            <div class="project__item colorz">
+              <div class="project__details">
+                <div class="project__text">
+                  <p class="project__title">GAME</p>
+                  <p class="project__name">COLORZ</p>
+                </div>
+                <div class="projectImg__container">
+                  <img src="images/colorz.png" class="project__img" alt="" />
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="portfolio/index.html" class="project__links">
+            <div class="project__item portfolio">
+              <div class="project__details">
+                <div class="project__text">
+                  <p class="project__title">WEBSITE</p>
+                  <p class="project__name">PORTFOLIO</p>
+                </div>
+                <div class="projectImg__container">
+                  <img src="images/portfolio.png" class="project__img" alt="" />
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="graphics/index.html" class="project__links graphicsChild">
+            <div class="project__item graphics">
+              <div class="project__details graphics__details">
+                <div class="project__text graphics__text">
+                  <p class="project__title">GRAPHIC DESIGN</p>
+                  <p class="project__name">SPORTS DESIGN</p>
+                </div>
+                <div class="projectImg__background">
+                  <div class="graphicsImg__container">
+                    <img
+                      src="images/movember.png"
+                      class="graphics__img"
+                      alt=""
+                    />
+                    <img
+                      src="images/noahKrakCommit.PNG"
+                      class="graphics__img"
+                      alt=""
+                    />
+                    <img
+                      src="images/crew-geyer.png"
+                      class="graphics__img"
+                      alt=""
+                    />
+                    <img
+                      src="images/namePlates.png"
+                      class="graphics__img namePlatesImg"
+                      alt=""
+                    />
+                    <img
+                      src="images/nealeCommit.png"
+                      class="graphics__img"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="contact__container">
+        <div
+          class="text__header contact__header mobileText__header underlined__header"
+        >
+          Contact me
+        </div>
+        <div class="contact__content">
+          <div class="contact__col contactFlexItem">
+            <div class="contact__box">
+              <div class="contact__details">
+                <div class="contact__name">
+                  <p>name:</p>
+                  <input type="text" class="contact__info" />
+                </div>
+                <div class="contact__email">
+                  <p>email:</p>
+                  <input type="text" class="contact__info" />
+                </div>
+                <div class="contact__message">
+                  <p>message:</p>
+                  <textarea name="message" class="messageBox"></textarea>
+                </div>
+                <a href="" class="submit__btn"><button>submit</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="links__col contactFlexItem">
+            <div class="spotify__container">
+              <div class="spotify__content">
+                <div class="spotifyImg__container">
+                  <a href="https://open.spotify.com/search/seek%20and%20destroy"
+                    ><img src="images/spotify.png" alt="" class="spotify__img"
+                  /></a>
+                </div>
+                <div class="spotifyText__container">
+                  <p class="songDescription">Last played song</p>
+                  <p class="songTitle">Seek & Destroy by SZA</p>
+                </div>
+              </div>
+            </div>
+            <div class="links__content">
+              <div class="text__header mobileText__header underlined__header">
+                Links
+              </div>
+              <div class="links__items">
+                <a
+                  href="https://github.com/taikurachi?tab=repositories"
+                  class="links"
+                  >Github</a
+                >
+                <a
+                  href="https://www.linkedin.com/in/taisei-kurachi-00060724b/"
+                  class="links"
+                  >LinkedIn</a
+                >
+                <a
+                  href="https://drive.google.com/file/d/1mT3P2Mhu4Qml1xJTIryMjDG4KznqPZnI/view?usp=sharing"
+                  class="links"
+                  >Resume</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
   </body>
 </html>

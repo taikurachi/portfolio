@@ -1,0 +1,109 @@
+.project__content {
+  margin: 10rem;
+  max-width: 1600px;
+}
+
+.project__links {
+  text-decoration: none;
+  color: black;
+  display: grid;
+}
+.project__container {
+  margin-top: 8rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 7rem;
+}
+
+.project__item {
+  height: 375px;
+  background: white;
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+.projectImg__container {
+  width: 300px;
+}
+
+.project__img {
+  width: 500px;
+  margin-left: 40px;
+}
+
+.project__details {
+  margin: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.project__text {
+  display: flex;
+  flex-direction: column;
+  /* width: min-content; */
+  text-align: right;
+}
+
+.project__name {
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.project__title {
+  font-size: 1.2rem;
+}
+
+.stashIt {
+  background: rgba(184, 203, 132, 0.43);
+}
+
+.gmb {
+  background: rgba(50, 177, 248, 0.57);
+}
+
+.portfolio {
+  background: rgba(202, 165, 31, 0.43);
+}
+
+.colorz {
+  background: rgba(255, 185, 185, 1);
+}
+
+.graphicsChild {
+  grid-column: span 2;
+}
+.graphics {
+  background: rgba(35, 31, 202, 0.43);
+}
+
+.graphics__details {
+  height: min-content;
+  margin: 2.5rem 0 3rem 0;
+}
+
+.graphics__text {
+  text-align: center;
+}
+
+.projectImg__background {
+  background: white;
+  height: 400px;
+}
+
+.graphics__img {
+  width: 220px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.3);
+}
+
+.namePlatesImg {
+  width: 260px;
+}
+
+.graphicsImg__container {
+  display: flex;
+  margin: 2rem 0 0 -50px;
+  width: 1800px;
+  justify-content: flex-start;
+  gap: 2rem;
+}

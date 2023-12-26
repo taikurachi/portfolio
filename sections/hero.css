@@ -1,0 +1,44 @@
+.hero {
+  display: flex;
+  justify-content: center;
+}
+
+.hero__content {
+  margin: -30px 10rem 4rem 10rem;
+  font-size: 8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 1600px;
+}
+
+.topRow {
+  display: flex;
+  flex-direction: column;
+  font-weight: 800;
+}
+.name {
+  white-space: nowrap;
+}
+.hi {
+  font-size: 10rem;
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
+    2px 2px 0 #000;
+  color: beige;
+}
+.horizontalLine {
+  width: 100%;
+  height: 10px;
+  background: lightblue;
+}
+
+.jobTitle {
+  font-size: 7rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.location {
+  font-size: 7rem;
+  font-weight: 300;
+}

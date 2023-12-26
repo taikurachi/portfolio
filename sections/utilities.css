@@ -1,0 +1,28 @@
+body {
+  background-color: beige;
+}
+
+.text__header {
+  font-size: 7rem;
+  font-weight: 700;
+}
+
+.links {
+  color: black;
+  position: relative;
+}
+
+.links::after {
+  content: "";
+  background: lightcoral;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  width: 0;
+  top: 34px;
+  transition: width 0.1s ease;
+}
+
+.links:hover::after {
+  width: 100%;
+}
