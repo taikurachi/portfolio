@@ -87,7 +87,7 @@
 }
 .phoneVid__container {
   position: absolute;
-  height: 96%;
+  height: 96.6%;
   width: 94%;
   transform: translate(8px, 8px);
   z-index: -2;
@@ -118,7 +118,7 @@
 
   .phoneVid__container {
     position: absolute;
-    height: 96%;
+
     width: 94%;
     transform: translate(6px, 6px);
     z-index: -2;
@@ -237,9 +237,9 @@
   }
   .phoneVid__container {
     position: absolute;
-    height: 95.5%;
-    width: 95.5%;
-    transform: translate(2px, 3px);
+    height: 94.9%;
+    width: 94.5%;
+    transform: translate(2px, 2.7px);
     z-index: -2;
     left: 0;
     top: 0;

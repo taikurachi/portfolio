@@ -40,6 +40,12 @@
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .project__steps {
+    margin: 0rem 4rem 0rem 4rem;
+  }
+}
+
 @media only screen and (max-width: 450px) {
   .project__steps .project__how {
     font-size: 3rem;

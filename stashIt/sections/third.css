@@ -37,7 +37,7 @@
 
 @media only screen and (max-width: 804px) {
   .third {
-    margin: 0rem 0.5rem 0rem 0.5rem;
+    margin: 0rem 4rem 0rem 4rem;
   }
 
   .thirdImg__layout {
@@ -90,11 +90,15 @@
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 430px) {
   .dropdownMenu {
     width: 100%;
     grid-column-start: 2;
     grid-column-end: -1;
     margin-top: -40px;
+  }
+
+  .third {
+    margin: 0rem 1rem 0rem 1rem;
   }
 }

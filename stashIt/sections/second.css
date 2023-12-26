@@ -31,15 +31,18 @@
 
 @media only screen and (max-width: 804px) {
   .second {
-    margin: 0rem 0.5rem 0rem 0.5rem;
+    margin: 0rem 4rem 0rem 4rem;
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 430px) {
   .second .secondImg__layout {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
+  }
+  .second {
+    margin: 0rem 1rem 0rem 1rem;
   }
 }
 

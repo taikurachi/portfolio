@@ -47,3 +47,9 @@
     grid-template-columns: 1fr 1fr;
   }
 }
+
+@media only screen and (max-width: 430px) {
+  .first {
+    margin: 0rem 1rem 0rem 1rem;
+  }
+}
