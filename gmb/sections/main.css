@@ -1,0 +1,64 @@
+body {
+  background-image: linear-gradient(
+    to right,
+    rgba(216, 65, 129, 0.5),
+    rgba(70, 155, 180, 0.5),
+    rgba(216, 65, 129, 0.5),
+    rgba(70, 155, 180, 0.5)
+  );
+
+  background-size: 270%;
+  animation: animate-gradient 20s linear infinite;
+  color: white;
+}
+
+@keyframes animate-gradient {
+  from {
+    background-position: 0% 50%;
+  }
+  to {
+    background-position: 100% 50%;
+  }
+}
+
+.navbar {
+  height: 100px;
+  /* background: beige; */
+}
+
+.navbar__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  gap: 2rem;
+  font-size: 1.5rem;
+  color: black;
+}
+
+.navbar__items {
+  color: white;
+  position: relative;
+}
+
+.navbar__items::after {
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: width 0.3s ease;
+}
+
+.navbar__items:hover::after {
+  width: 100%;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 8rem;
+}

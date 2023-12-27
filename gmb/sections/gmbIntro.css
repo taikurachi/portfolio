@@ -1,0 +1,51 @@
+.gmbLogoImg__container {
+  width: 400px;
+}
+
+.gmbImg {
+  width: 100%;
+}
+
+.gmb__intro {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  /* text-align: left; */
+  gap: 5rem;
+  /* border: 2px solid red; */
+  width: 80%;
+  /* padding-top: 10rem; */
+  /* border: 2px solid red; */
+  margin-top: 4rem;
+}
+
+.gmb__description {
+  width: 60%;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.gmb__details {
+  display: flex;
+  gap: 5rem;
+  /* border: 2px solid red; */
+}
+
+.timeline__container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.role__container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+
+  /* text-align: right; */
+}
+
+.role__container p {
+  width: 150px;
+  /* border: 2px solid red; */
+}

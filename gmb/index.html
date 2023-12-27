@@ -3,9 +3,168 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>GMB</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    gmb
+    <section class="navbar">
+      <div class="navbar__container">
+        <a href="https://taiseikurachi.xyz/#about" class="navbar__items links"
+          >about</a
+        >
+        <a href="https://taiseikurachi.xyz/#contact" class="navbar__items links"
+          >contacts</a
+        >
+        <a
+          href="https://taiseikurachi.xyz/#projects"
+          class="navbar__items links"
+          >projects</a
+        >
+      </div>
+    </section>
+
+    <section class="content">
+      <div class="gmb__intro">
+        <a href="https://gmb.io/">
+          <div class="gmbLogoImg__container">
+            <img
+              src="..//images/gmb/gmbLogoCropped.svg"
+              alt=""
+              class="gmbImg"
+            />
+          </div>
+        </a>
+
+        <div class="gmb__description">
+          Projects I've completed as a Freelance Front-End Developer & Designer
+          for GMB Fitness.
+        </div>
+
+        <div class="gmb__details">
+          <div class="timeline__container">
+            <p>Timeline:</p>
+            <p>May 2023 - Present</p>
+          </div>
+          <div class="role__container">
+            <p>Role:</p>
+            <p>Front-End Designer, Developer</p>
+          </div>
+        </div>
+      </div>
+      <div class="gmb__first projects__container">
+        <div class="headerDescription__container">
+          <div class="first__header project__header">1. Pricing Table</div>
+          <div class="first__description project__description">
+            I was tasked with creating a new pricing table to sell GMB Programs.
+            Here's what I came up with.
+          </div>
+        </div>
+        <div class="before__container project__display">
+          <div class="before__header header__states">Before</div>
+          <div class="beforeImg__container">
+            <img
+              src="..//images/gmb/gmbPricingTableBefore.svg"
+              alt=""
+              class="beforeImg project__img"
+            />
+          </div>
+        </div>
+        <div class="after__contianer project__display">
+          <div class="after__header header__states">After</div>
+          <div class="afterImg__container">
+            <img
+              src="..//images/gmb/gmbPricingTableAfter.svg"
+              alt=""
+              class="afterImg project__img"
+            />
+          </div>
+        </div>
+        <div class="project__actions">
+          <a href="https://gmb.io/e/#choose"
+            ><button class="viewLive">view live</button></a
+          >
+          <a href=""><button class="viewCode">view code</button></a>
+        </div>
+      </div>
+
+      <div class="gmb__second projects__container">
+        <div class="headerDescription__container">
+          <div class="second__header project__header">
+            2. Desktop & Phone Autoplay
+          </div>
+          <div class="second__description project__description">
+            I was tasked with brainstorming and implementing various ways to add
+            dynamic animations and interactivity to the GMB website. I thought
+            of adding a dynamic auto-scrolling desktop/phone image to improve
+            the user experience and engagement when scrolling through the list
+            of available programs.
+          </div>
+        </div>
+        <div class="before__container project__display">
+          <div class="before__header header__states">Before</div>
+          <div class="beforeImg__container">
+            <img
+              src="..//images/gmb/desktopPhoneAutoplayBefore.svg"
+              alt=""
+              class="beforeImg project__img"
+            />
+          </div>
+        </div>
+        <div class="after__contianer project__display">
+          <div class="after__header header__states">After</div>
+          <div class="afterImg__container">
+            <video
+              autoplay
+              muted
+              loop
+              src="..//images/gmb/desktopPhoneAutoplayAfter.mp4"
+              class="afterVid"
+            ></video>
+          </div>
+        </div>
+        <div class="project__actions">
+          <a href=""><button class="viewLive">view live</button></a>
+          <a href=""><button class="viewCode">view code</button></a>
+        </div>
+      </div>
+
+      <div class="gmb__third projects__container">
+        <div class="headerDescription__container">
+          <div class="third__header project__header">
+            3. Helpscout Page Styling Improvements
+          </div>
+          <div class="third__description project__description">
+            I was tasked with improving the Help page of GMB Fitness. I added a
+            dynamic background gradient in the header and emojis in each section
+            to match the GMB theme and improve the user experience and
+            efficiency.
+          </div>
+        </div>
+        <div class="thirdImg__container">
+          <img
+            src="../images/gmb/helpscoutImg.png"
+            alt=""
+            class="thirdImg project__img"
+          />
+        </div>
+        <div class="project__actions">
+          <a href="https://help.gmb.io/"
+            ><button class="viewLive">view live</button></a
+          >
+        </div>
+      </div>
+
+      <div class="next__btn">
+        <a href="" class=""
+          ><button class="next__project"><p>Next Project: COLORZ</p></button></a
+        >
+      </div>
+    </section>
   </body>
 </html>
