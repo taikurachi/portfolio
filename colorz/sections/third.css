@@ -1,0 +1,14 @@
+.third {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0rem 8rem 0rem 8rem;
+  gap: 3rem;
+}
+
+.thirdImg__container {
+  width: 100%;
+}
+.thirdImg {
+  width: 100%;
+}

@@ -1,0 +1,19 @@
+.fourth {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 3rem;
+  margin: 0rem 8rem 0rem 8rem;
+}
+
+@media only screen and (max-width: 804px) {
+  .fourth {
+    margin: 0rem 4rem 0rem 4rem;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .fourth {
+    margin: 0rem 1rem 0rem 1rem;
+  }
+}

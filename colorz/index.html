@@ -3,9 +3,151 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>COLORZ</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    colorz
+    <section class="navbar">
+      <div class="navbar__container">
+        <a href="https://taiseikurachi.xyz/#about" class="navbar__items links"
+          >about</a
+        >
+        <a href="https://taiseikurachi.xyz/#contact" class="navbar__items links"
+          >contacts</a
+        >
+        <a
+          href="https://taiseikurachi.xyz/#projects"
+          class="navbar__items links"
+          >projects</a
+        >
+      </div>
+    </section>
+    <section class="content">
+      <div class="project__demo">
+        <div class="project__name">COLORZ</div>
+        <div class="project__description">
+          Typing game built using vanilla JavaScript.
+        </div>
+        <div class="project__details">
+          <div class="timeline__container">
+            <p>Timeline:</p>
+            <p>February 2023 - May 2023</p>
+          </div>
+          <div class="role__container">
+            <p>Role:</p>
+            <p>UX/UI Designer, Web Designer, Web Developer</p>
+          </div>
+        </div>
+        <div class="project__display">
+          <video
+            autoplay
+            muted
+            loop
+            class="colorzVid"
+            src="..//images/colorz/colorzVidNew.mp4"
+          ></video>
+        </div>
+        <div class="project__actions">
+          <a href="https://taikurachi.github.io/stashIt/"
+            ><button class="viewSite">view site</button></a
+          >
+          <a href="https://github.com/taikurachi/stashIt"
+            ><button class="viewCode">view code</button></a
+          >
+        </div>
+      </div>
+      <div class="project__steps">
+        <div class="project__how">How I made it</div>
+        <div class="projectSteps__container">
+          <ol class="steps">
+            <li>Early Brainstorming & Lo-fi Wireframing</li>
+            <li>Hi-fi Mockups</li>
+            <li>Feedback & Iterations</li>
+            <li>Coding</li>
+          </ol>
+        </div>
+      </div>
+      <div class="first">
+        <div class="first__header project__header">
+          1. Early Brainstorming & Wireframing
+        </div>
+        <div class="first__description project__description">
+          Since I've alawys enjoyed typing games, I wanted to create my own. I
+          decided I want to create a color typing game that required the user to
+          type a given color basaed on what appeared on the screen. Here's what
+          I came up with.
+        </div>
+        <div class="firstImg__container">
+          <img
+            src="..//images/colorz/colorzDesign.svg"
+            alt=""
+            class="firstImg"
+          />
+        </div>
+      </div>
+      <div class="second">
+        <div class="second__header project__header">2. Coding</div>
+        <div class="second__description project__description">
+          I translated my desings into HTML, CSS and JavaScript. For this
+          project, I decided I was only going to use vanilla JavaScript in order
+          to gain a broader understanding of the fundamentals.
+        </div>
+        <div class="secondImg__container">
+          <img
+            src="..//images/colorz/colorzCoding.svg"
+            alt=""
+            class="secondImg"
+          />
+        </div>
+      </div>
+
+      <div class="third">
+        <div class="third__header project__header">
+          3. User Testing & Iterations
+        </div>
+        <div class="third__description project__description">
+          Feedback & suggestions from user testing.
+        </div>
+        <ol class="steps">
+          <li class="steps__item">Increase in difficulty as score increases</li>
+          <li class="steps__item">Include a game over screen</li>
+          <li class="steps__item">
+            Adding a collision detection system within the viewport
+          </li>
+          <li class="steps__item">Play again button</li>
+          <li class="steps__item">
+            Add a homepage so the game doesn't doesn't start immediately
+          </li>
+        </ol>
+
+        <div class="thirdImg__container">
+          <img src="..//images//colorz/gameOver.svg" alt="" class="thirdImg" />
+        </div>
+      </div>
+
+      <div class="fourth">
+        <div class="fourth__header project__header">4. Debugging</div>
+        <div class="fourth__desription project__description">
+          Upon trying to implement these new features, I encountered tons of new
+          bugs and issues. One of them was the "game over" screen appearing
+          multiple times after the game had ended. I fixed this issue by setting
+          up a boolean flag so that the function only happens once.
+        </div>
+      </div>
+
+      <div class="next__btn">
+        <a href="" class=""
+          ><button class="next__project">
+            <p>Next Project: Portfolio</p>
+          </button></a
+        >
+      </div>
+    </section>
   </body>
 </html>

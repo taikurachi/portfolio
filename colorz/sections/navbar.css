@@ -1,17 +1,6 @@
-.project__header {
-  font-size: calc(5vw + 30px);
-  letter-spacing: 5px;
-  font-weight: 700;
-}
-body {
-  background: #2c303a;
-  color: white;
-}
-
-/* NAVBAR */
 .navbar {
   height: 100px;
-  background: #2c303a;
+  /* background: #2c303a;   */
 }
 
 .navbar__container {
@@ -25,7 +14,7 @@ body {
 }
 
 .navbar__items {
-  color: white;
+  color: black;
 
   position: relative;
 }
@@ -37,26 +26,14 @@ body {
   left: 0;
   top: 35px;
   height: 2px;
-  background: white;
+  background: black;
 }
 .navbar__items:hover::after {
   width: 100%;
   transition: all 0.3s ease;
 }
-.content {
-  display: flex;
-  flex-direction: column;
-  gap: 8rem;
-  align-items: center;
-}
 
 @media only screen and (max-width: 400px) {
-  .project__header {
-    /* font-size: 6rem; */
-    font-size: 2.6rem;
-    letter-spacing: 1px;
-    font-weight: 800;
-  }
   .navbar__items {
     font-size: 1.2rem;
   }
