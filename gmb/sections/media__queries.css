@@ -91,3 +91,14 @@
     font-size: 1.2rem;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .next__btn {
+    padding-bottom: 8rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .next__btn {
+    padding-bottom: 6rem;
+  }
+}

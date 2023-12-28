@@ -1,8 +1,8 @@
 .third {
   display: flex;
   flex-direction: column;
-  text-align: center;
-  margin: 0rem 8rem 0rem 8rem;
+  /* text-align: center; */
+  margin: 0rem 7rem 0rem 7rem;
   gap: 3rem;
 }
 
@@ -11,4 +11,23 @@
 }
 .thirdImg {
   width: 100%;
+}
+
+@media only screen and (max-width: 804px) {
+  .third .steps {
+    gap: 2.5rem;
+    font-weight: 500;
+    font-size: 4vw;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .third .steps {
+    font-size: 1.2rem;
+    gap: 1.5rem;
+  }
+
+  .third {
+    margin: 0rem 4rem;
+  }
 }

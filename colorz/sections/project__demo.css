@@ -133,6 +133,19 @@
   justify-content: center;
   gap: 5rem;
 }
+
+@media only screen and (max-width: 550px) {
+  .viewCode:hover {
+    background: none;
+    transition: all 0.2s ease;
+    letter-spacing: 0px;
+  }
+  .viewSite:hover {
+    background: none;
+    transition: all 0.2s ease;
+    letter-spacing: 0px;
+  }
+}
 @media only screen and (max-width: 804px) {
   .project__demo {
     margin: 2rem 4rem 0rem 4rem;
