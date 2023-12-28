@@ -1,17 +1,41 @@
-.project__demo {
-  margin: -3rem 8rem 0rem 8rem;
+.stashItLogo__container {
+  width: 700px;
+}
+.stashItLogo {
+  width: 100%;
+  filter: brightness(0) saturate(100%) invert(97%) sepia(0%) saturate(2%)
+    hue-rotate(255deg) brightness(109%) contrast(101%);
 }
 
-.stashIt__header {
-  font-size: 8rem;
-  font-weight: 700;
-  transform: translateY(50px);
+.stashIt__details {
+  display: flex;
+  gap: 5rem;
 }
-.project__demo {
+
+.timeline__container {
   display: flex;
   flex-direction: column;
+  gap: 0.8rem;
+}
+.role__container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+
+  /* text-align: right; */
+}
+
+.role__container p {
+  width: 150px;
+  /* border: 2px solid red; */
+}
+.project__demo {
+  margin: 4rem 8rem 0rem 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 4rem;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .project__description {
@@ -107,7 +131,9 @@
     height: calc(47vw - 117px);
     transform: translate(0px, -21px);
   }
-
+  .stashItLogo__container {
+    width: 500px;
+  }
   .phoneImg__container {
     width: 200px;
     position: relative;
@@ -163,6 +189,9 @@
     top: 0;
     border-radius: 18px;
   }
+  .project__description {
+    font-size: 1.6rem;
+  }
 }
 @media only screen and (max-width: 900px) {
   .laptopVid__container {
@@ -200,7 +229,7 @@
     height: calc(55vw - 60px);
   }
   .project__demo {
-    margin: 0rem 4rem 0rem 4rem;
+    margin: 2rem 4rem 0rem 4rem;
   }
 }
 
@@ -248,6 +277,9 @@
   .project__demo .project__actions {
     gap: 4rem;
   }
+  .project__description {
+    font-size: 1.2rem;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -255,6 +287,17 @@
     /* width: 312px; */
     /* height: 190px; */
     transform: translate(0px, -13px);
+  }
+  .project__demo .stashItLogo__container {
+    width: 400px;
+  }
+
+  .project__description {
+    text-align: center;
+  }
+
+  .project__demo {
+    gap: 2rem;
   }
 }
 
@@ -281,6 +324,9 @@
     /* height: calc(55vw - 60px); */
     height: 238px;
     /* min-height: 207px; */
+  }
+  .project__description {
+    font-size: 1rem;
   }
 }
 
@@ -328,6 +374,9 @@
     padding: 15px;
     font-size: 1.4rem;
   }
+  .project__demo .stashItLogo__container {
+    width: 250px;
+  }
 }
 
 @media only screen and (max-width: 400px) {
@@ -339,13 +388,27 @@
     position: absolute;
     width: 240px;
     height: 160px;
-    transform: translate(0px, -10 px);
+    transform: translate(0px, -10px);
     overflow: hidden;
   }
   .laptopPhoneAutoplay__container {
     /* height: calc(55vw - 60px); */
     height: 193px;
     /* min-height: 207px; */
+  }
+  .project__demo {
+    margin-top: 2rem;
+  }
+  .project__demo .stashItLogo__container {
+    width: 300px;
+  }
+  .project__description {
+    font-size: 0.8rem;
+  }
+  .stashIt__details {
+    display: flex;
+    gap: 1.9rem;
+    font-size: 0.7rem;
   }
 }
 
@@ -360,7 +423,9 @@
   border-radius: 20px;
   border: none;
   font-size: 2rem;
-  background: var(--light-green);
+  color: white;
+  background: none;
+  border: 1px solid white;
 }
 
 .viewCode {
@@ -368,5 +433,19 @@
   border-radius: 20px;
   border: none;
   font-size: 2rem;
-  background: var(--light-red);
+  color: white;
+  background: none;
+  border: 1px solid white;
+  transition: all 0.3s ease;
+}
+
+.viewSite:hover {
+  background: white;
+  color: #16181d;
+  transition: all 0.3s ease;
+}
+.viewCode:hover {
+  background: white;
+  color: #16181d;
+  transition: all 0.3s ease;
 }
