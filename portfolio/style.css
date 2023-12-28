@@ -1,0 +1,17 @@
+@import url(sections/navbar.css);
+
+@import url(sections/utilities.css);
+@import url(sections/project__demo.css);
+@import url(sections/project__steps.css);
+@import url(sections/first.css);
+@import url(sections/second.css);
+@import url(sections/third.css);
+@import url(sections/next__btn.css);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", sans-serif;
+  text-decoration: none;
+}

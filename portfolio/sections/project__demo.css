@@ -1,3 +1,8 @@
+.project__name {
+  font-size: 8rem;
+  font-weight: 800;
+}
+
 .stashIt__details {
   display: flex;
   gap: 5rem;
@@ -12,10 +17,13 @@
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
+
+  /* text-align: right; */
 }
 
 .role__container p {
   width: 150px;
+  /* border: 2px solid red; */
 }
 .project__demo {
   margin: 4rem 8rem 0rem 8rem;
@@ -23,10 +31,7 @@
   flex-direction: column;
   align-items: center;
   gap: 4rem;
-}
-
-.project__description {
-  font-size: 2rem;
+  /* text-align: center; */
 }
 
 .project__display {
@@ -46,16 +51,20 @@
 
 .laptopPhoneAutoplay__container {
   height: calc(58vw - 155px);
+  /* min-height: 207px; */
 }
 
 .laptop__container {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* height: 600px; */
+  /* margin: 4rem; */
 }
 
 .laptopImg__container {
   position: relative;
+  /* min-width: 360px; */
 }
 
 .laptopPhoneAutoplay__container .laptopImg__container .laptopImg {
@@ -65,8 +74,9 @@
 .laptopVid__container {
   position: absolute;
   width: calc(76vw - 202px);
-  height: calc(47vw - 118px);
+  height: calc(45.5vw - 88px);
   min-width: 248px;
+  /* min-height: 200px; */
   transform: translate(-1px, -26px);
   overflow: hidden;
 }
@@ -110,7 +120,7 @@
 @media only screen and (max-width: 1200px) {
   .laptopVid__container {
     width: calc(76vw - 201px);
-    height: calc(47vw - 117px);
+    height: calc(46vw - 100px);
     transform: translate(0px, -21px);
   }
   .stashItLogo__container {
@@ -135,6 +145,9 @@
     border-radius: 18px;
     overflow: hidden;
   }
+  .project__name {
+    font-size: 6rem;
+  }
 }
 @media only screen and (max-width: 1083px) {
   .laptopVid__container {
@@ -145,7 +158,7 @@
 @media only screen and (max-width: 1000px) {
   .laptopVid__container {
     width: calc(76vw - 200px);
-    height: calc(47vw - 117px);
+    height: calc(47vw - 115px);
     transform: translate(0, -17px);
   }
 
@@ -174,9 +187,14 @@
   .project__description {
     font-size: 1.6rem;
   }
+  .project__name {
+    font-size: 5rem;
+  }
 }
 @media only screen and (max-width: 900px) {
   .laptopVid__container {
+    width: calc(76vw - 200px);
+    height: calc(47vw - 114px);
     transform: translateY(-15px);
   }
 
@@ -262,13 +280,17 @@
   .project__description {
     font-size: 1.2rem;
   }
+  .project__name {
+    font-size: 4rem;
+    font-weight: 800;
+  }
 }
 
 @media only screen and (max-width: 600px) {
   .laptop__container .laptopVid__container {
     /* width: 312px; */
     /* height: 190px; */
-    transform: translate(0px, -13px);
+    transform: translate(0px, -10px);
   }
   .project__demo .stashItLogo__container {
     width: 400px;
@@ -285,11 +307,10 @@
 
 @media only screen and (max-width: 540px) {
   .laptop__container .laptopVid__container {
-    /* width: calc(76vw - 196px); */
-    /* height: calc(46vw - 123px); */
-    width: 312px;
-    height: 200px;
-    transform: translateY(-12px);
+    width: calc(74vw - 86px);
+    height: calc(48vw - 64px);
+
+    transform: translateY(-9px);
   }
   .phoneVid__container {
     position: absolute;
@@ -316,6 +337,10 @@
   .stashIt__header {
     font-size: 4.7rem;
   }
+  .laptop__container .laptopVid__container {
+    transform: translate(0px, -8px);
+    overflow: hidden;
+  }
 }
 @media only screen and (max-width: 450px) {
   .laptopImg__container {
@@ -327,7 +352,7 @@
     width: 286px;
     height: 180px;
 
-    transform: translate(0px, -9px);
+    transform: translate(0px, -7px);
     overflow: hidden;
   }
   .phoneImg__container {
@@ -345,11 +370,6 @@
 
   .project__demo .project__actions {
     gap: 2rem;
-  }
-
-  .project__actions .viewSite {
-    padding: 15px;
-    font-size: 1.4rem;
   }
 
   .project__actions .viewCode {
@@ -392,6 +412,9 @@
     gap: 1.9rem;
     font-size: 0.7rem;
   }
+  .project__name {
+    font-size: 2.7rem;
+  }
 }
 
 .project__actions {
@@ -400,35 +423,19 @@
   gap: 5rem;
 }
 
-.viewSite {
-  padding: 15px 50px 15px 50px;
-  border-radius: 20px;
-  border: none;
-  font-size: 2rem;
-  color: white;
-  background: none;
-  border: 1px solid white;
-  transition: all 0.3s ease;
-}
-
 .viewCode {
   padding: 15px 50px 15px 50px;
   border-radius: 20px;
   border: none;
   font-size: 2rem;
-  color: white;
+  color: black;
   background: none;
-  border: 1px solid white;
+  border: 1px solid black;
   transition: all 0.3s ease;
 }
 
-.viewSite:hover {
-  background: white;
-  color: #16181d;
-  transition: all 0.3s ease;
-}
 .viewCode:hover {
-  background: white;
+  background: black;
   color: #16181d;
   transition: all 0.3s ease;
 }

@@ -1,0 +1,98 @@
+body {
+  background-image: linear-gradient(
+    to right,
+    rgb(221, 215, 198),
+    rgb(218, 246, 215),
+    rgb(249, 222, 237),
+    rgb(196, 236, 253),
+    rgb(249, 222, 237),
+    rgb(218, 246, 215),
+    rgb(221, 215, 198)
+  );
+
+  background-size: 300%;
+  animation: animate-gradient 30s linear infinite;
+  color: black;
+}
+
+@keyframes animate-gradient {
+  0% {
+    background-position: 0% 25%;
+  }
+  50% {
+    background-position: 30% 75%;
+  }
+  100% {
+    background-position: 140% 50%;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+  align-items: center;
+}
+
+.project__header {
+  font-size: calc(5vw + 30px);
+  letter-spacing: 5px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.project__description {
+  font-size: 2rem;
+  text-align: center;
+}
+
+@media only screen and (max-width: 400px) {
+  .project__header {
+    /* font-size: 6rem; */
+    font-size: 2.6rem;
+    letter-spacing: 1px;
+    font-weight: 800;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .project__description {
+    font-size: 1.6rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .project__description {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .project__demo {
+    gap: 2rem;
+  }
+  .content .flexColumn {
+    gap: 2rem;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .project__description {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .project__description {
+    font-size: 0.8rem;
+  }
+  .content .flexColumn {
+    gap: 1rem;
+  }
+}
