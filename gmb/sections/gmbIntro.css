@@ -11,12 +11,8 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  /* text-align: left; */
   gap: 5rem;
-  /* border: 2px solid red; */
   width: 80%;
-  /* padding-top: 10rem; */
-  /* border: 2px solid red; */
   margin-top: 4rem;
 }
 
@@ -29,7 +25,6 @@
 .gmb__details {
   display: flex;
   gap: 5rem;
-  /* border: 2px solid red; */
 }
 
 .timeline__container {
@@ -41,11 +36,8 @@
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
-
-  /* text-align: right; */
 }
 
 .role__container p {
   width: 150px;
-  /* border: 2px solid red; */
 }

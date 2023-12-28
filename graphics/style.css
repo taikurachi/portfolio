@@ -1,10 +1,6 @@
-@import url(sections/about.css);
-@import url(sections/contact.css);
-@import url(sections/hero.css);
-@import url(sections/media__queries.css);
 @import url(sections/navbar.css);
-@import url(sections/projects.css);
 @import url(sections/utilities.css);
+@import url(sections/next__btn.css);
 
 * {
   box-sizing: border-box;

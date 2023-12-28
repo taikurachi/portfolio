@@ -1,0 +1,40 @@
+.navbar {
+  height: 100px;
+  /* background: #2c303a;   */
+}
+
+.navbar__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  gap: 2rem;
+  font-size: 1.5rem;
+  color: black;
+}
+
+.navbar__items {
+  color: black;
+
+  position: relative;
+}
+
+.navbar__items::after {
+  content: "";
+  width: 0;
+  position: absolute;
+  left: 0;
+  top: 35px;
+  height: 2px;
+  background: black;
+}
+.navbar__items:hover::after {
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+@media only screen and (max-width: 400px) {
+  .navbar__items {
+    font-size: 1.2rem;
+  }
+}
