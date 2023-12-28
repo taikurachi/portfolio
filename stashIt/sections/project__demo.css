@@ -1,3 +1,12 @@
+.stashItLogo__container {
+  width: 700px;
+}
+.stashItLogo {
+  width: 100%;
+  filter: brightness(0) saturate(100%) invert(97%) sepia(0%) saturate(2%)
+    hue-rotate(255deg) brightness(109%) contrast(101%);
+}
+
 .stashIt__details {
   display: flex;
   gap: 5rem;
@@ -12,10 +21,13 @@
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
+
+  /* text-align: right; */
 }
 
 .role__container p {
   width: 150px;
+  /* border: 2px solid red; */
 }
 .project__demo {
   margin: 4rem 8rem 0rem 8rem;
@@ -23,6 +35,7 @@
   flex-direction: column;
   align-items: center;
   gap: 4rem;
+  /* text-align: center; */
 }
 
 .project__description {
@@ -46,16 +59,20 @@
 
 .laptopPhoneAutoplay__container {
   height: calc(58vw - 155px);
+  /* min-height: 207px; */
 }
 
 .laptop__container {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* height: 600px; */
+  /* margin: 4rem; */
 }
 
 .laptopImg__container {
   position: relative;
+  /* min-width: 360px; */
 }
 
 .laptopPhoneAutoplay__container .laptopImg__container .laptopImg {
@@ -67,6 +84,7 @@
   width: calc(76vw - 202px);
   height: calc(47vw - 118px);
   min-width: 248px;
+  /* min-height: 200px; */
   transform: translate(-1px, -26px);
   overflow: hidden;
 }
