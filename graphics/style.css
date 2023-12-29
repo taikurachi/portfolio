@@ -1,6 +1,7 @@
 @import url(sections/navbar.css);
 @import url(sections/utilities.css);
 @import url(sections/next__btn.css);
+@import url(sections/project__gallery.css);
 
 * {
   box-sizing: border-box;
