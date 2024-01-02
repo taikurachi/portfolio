@@ -15,7 +15,7 @@
   transition: all 0.3s ease;
 }
 .next__project p {
-  width: 300px;
+  width: 350px;
 }
 
 .next__btn {
@@ -29,6 +29,6 @@
     border-radius: 25px;
   }
   .next__project p {
-    width: 100px;
+    width: 150px;
   }
 }

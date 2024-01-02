@@ -55,7 +55,7 @@
 }
 
 .stashIt {
-  background: rgba(184, 203, 132, 0.43);
+  background: rgba(64, 75, 91, 0.657);
 }
 
 .gmb {
@@ -106,4 +106,37 @@
   width: 1800px;
   justify-content: flex-start;
   gap: 2rem;
+}
+
+.project__item {
+  transition: all 0.2s ease;
+}
+.stashIt:hover {
+  scale: 1.05;
+  box-shadow: 0px 0px 20px rgba(64, 75, 91, 0.657);
+  transition: all 0.2s ease;
+}
+
+.gmb:hover {
+  scale: 1.05;
+  box-shadow: 0px 0px 20px rgba(17, 168, 255, 0.782);
+  transition: all 0.2s ease;
+}
+
+.colorz:hover {
+  scale: 1.05;
+  box-shadow: 0px 0px 20px rgba(255, 185, 185, 1);
+  transition: all 0.2s ease;
+}
+
+.portfolio:hover {
+  scale: 1.05;
+  box-shadow: 0px 0px 20px rgba(202, 165, 31, 0.43);
+  transition: all 0.2s ease;
+}
+
+.graphics:hover {
+  scale: 1.05;
+  box-shadow: 0px 0px 20px rgba(35, 31, 202, 0.43);
+  transition: all 0.2s ease;
 }
