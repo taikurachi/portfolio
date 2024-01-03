@@ -1,13 +1,14 @@
 .navbar {
-  height: 100px;
-  /* background: beige; */
+  /* height: 100px; */
+  background: transparent;
 }
 
 .navbar__container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100px;
+  height: 90px;
   gap: 2rem;
   font-size: 1.5rem;
+  font-weight: 300;
 }
