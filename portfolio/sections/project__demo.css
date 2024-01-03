@@ -435,7 +435,8 @@
 }
 
 .viewCode:hover {
-  background: black;
+  background: white;
+  /* border: none; */
   color: #16181d;
   transition: all 0.3s ease;
 }

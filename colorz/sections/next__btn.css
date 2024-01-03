@@ -32,11 +32,11 @@
     width: 100px;
   }
   .next__btn {
-    padding-bottom: 8rem;
+    padding-bottom: 6rem;
   }
 }
 @media screen and (max-width: 400px) {
   .next__btn {
-    padding-bottom: 6rem;
+    padding-bottom: 4rem;
   }
 }
