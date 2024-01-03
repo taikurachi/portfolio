@@ -14,6 +14,7 @@
   background: none;
   /* background: #28b1de; */
   transition: all 0.2s ease;
+  font-weight: 200;
 }
 
 .viewCode {
@@ -25,6 +26,7 @@
   color: white;
   background: none;
   transition: all 0.2s ease;
+  font-weight: 200;
 }
 
 .viewLive:hover {
@@ -47,6 +49,7 @@
 
 .project__description {
   font-size: 2rem;
+  font-weight: 300;
 }
 
 .header__states {

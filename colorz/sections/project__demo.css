@@ -1,6 +1,7 @@
 .project__details {
   display: flex;
   gap: 5rem;
+  font-weight: 200;
 }
 
 .timeline__container {
@@ -44,6 +45,7 @@
   transition: all 0.2s ease;
   border: 2px solid transparent;
   position: relative;
+  font-weight: 100;
   /* transition: outline 0.2s ease; */
 }
 
@@ -97,6 +99,7 @@
   border: 2px solid transparent;
   transition: all 0.3s ease;
   position: relative;
+  font-weight: 100;
 }
 
 .viewCode:hover {

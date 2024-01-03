@@ -18,6 +18,11 @@
 
 @media screen and (max-width: 1200px) {
   /* UTILITIES */
+
+  body::after,
+  body::before {
+    display: none;
+  }
   .text__header.mobileText__header {
     font-size: 6rem;
   }

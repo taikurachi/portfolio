@@ -10,6 +10,7 @@
 .stashIt__details {
   display: flex;
   gap: 5rem;
+  font-weight: 200;
 }
 
 .timeline__container {
@@ -40,6 +41,7 @@
 
 .project__description {
   font-size: 2rem;
+  font-weight: 300;
 }
 
 .project__display {
@@ -438,6 +440,7 @@
   background: none;
   border: 1px solid white;
   transition: all 0.3s ease;
+  font-weight: 100;
 }
 
 .viewCode {
@@ -449,6 +452,7 @@
   background: none;
   border: 1px solid white;
   transition: all 0.3s ease;
+  font-weight: 100;
 }
 
 .viewSite:hover {

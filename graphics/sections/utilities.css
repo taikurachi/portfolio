@@ -5,14 +5,14 @@ body {
     rgb(218, 120, 215),
     rgb(160, 100, 237),
     rgb(228, 161, 255),
-    rgb(249, 100, 237),
+    rgb(160, 100, 237),
     rgb(218, 120, 215),
     rgb(218, 120, 215)
   );
 
   background-size: 300%;
   animation: animate-gradient 30s linear infinite;
-  color: black;
+  color: white;
 }
 
 @keyframes animate-gradient {
