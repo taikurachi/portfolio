@@ -44,3 +44,34 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     });
   });
 });
+
+const form = document.querySelector(".contact__content");
+const fullName = document.querySelector("#name");
+const email = document.querySelector("#email");
+const mess = document.querySelector("#message");
+
+function sendEmail() {
+  const bodyMessage = `Full Name: ${fullName.value}<br> Email: ${email.value}<br> Message: ${mess.value} `;
+  Email.send({
+    Host: "smtp.elasticemail.com",
+    Username: "taisei.kurachi@nyu.edu",
+    Password: "024FBE6F0C440ABE96B2871E16E2562F226E",
+    To: "Burichan523@gmail.com",
+    From: "tk2958@nyu.edu",
+    Subject: "Let's Talk",
+    Body: bodyMessage,
+  }).then((message) => {
+    if (message == "OK") {
+      Swal.fire({
+        title: "Success!",
+        text: "Message sent successfully!",
+        icon: "success",
+      });
+    }
+  });
+}
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  sendEmail();
+});

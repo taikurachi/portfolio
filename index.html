@@ -189,23 +189,29 @@
         >
           Contact me
         </div>
-        <div class="contact__content">
+        <form class="contact__content" action="#">
           <div class="contact__col contactFlexItem">
             <div class="contact__box">
               <div class="contact__details">
                 <div class="contact__name">
                   <p>name:</p>
-                  <input type="text" class="contact__info" />
+                  <input type="text" class="contact__info" id="name" />
                 </div>
                 <div class="contact__email">
                   <p>email:</p>
-                  <input type="text" class="contact__info" />
+                  <input type="text" class="contact__info" id="email" />
                 </div>
                 <div class="contact__message">
                   <p>message:</p>
-                  <textarea name="message" class="messageBox"></textarea>
+                  <textarea
+                    name="message"
+                    class="messageBox"
+                    id="message"
+                  ></textarea>
                 </div>
-                <a href="" class="submit__btn"><button>submit</button></a>
+                <a href="" class="submit__btn"
+                  ><button type="submit">submit</button></a
+                >
               </div>
             </div>
           </div>
@@ -246,12 +252,19 @@
                   class="links"
                   >Resume</a
                 >
+                <a
+                  href="mailto:taisei.kurachi@nyu.edu?subject=&body="
+                  class="links"
+                  >Email</a
+                >
               </div>
             </div>
           </div>
-        </div>
+        </form>
       </div>
     </section>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://unpkg.com/split-type"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script
