@@ -16,10 +16,19 @@
 .third__steps {
   margin: 0rem 12rem 0rem 12rem;
 }
+
+@media only screen and (max-width: 1200px) {
+  .third__steps {
+    margin: 0rem 6rem 0rem 6rem;
+  }
+}
 @media only screen and (max-width: 804px) {
   .third .steps {
     gap: 2.5rem;
     font-size: 4vw;
+  }
+  .third__steps {
+    margin: 0rem 2rem 0rem 2rem;
   }
 }
 
@@ -30,6 +39,6 @@
   }
 
   .third {
-    margin: 0rem 4rem;
+    margin: 0rem 2rem;
   }
 }
