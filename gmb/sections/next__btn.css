@@ -24,3 +24,23 @@
 .next__btn {
   padding-bottom: 10rem;
 }
+
+@media screen and (max-width: 600px) {
+  .next__project {
+    padding: 30px 40px 30px 40px;
+    font-size: 1rem;
+
+    border-radius: 25px;
+  }
+  .next__project p {
+    width: 100px;
+  }
+  .next__btn {
+    padding-bottom: 6rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .next__btn {
+    padding-bottom: 4rem;
+  }
+}

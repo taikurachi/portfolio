@@ -1,3 +1,8 @@
+@font-face {
+  font-family: myFont;
+  src: url(../RubikDoodleShadow-Regular.ttf);
+}
+
 .project__details {
   display: flex;
   gap: 5rem;
@@ -26,6 +31,7 @@
 .project__name {
   font-size: 7rem;
   font-weight: 800;
+  font-family: myFont;
 }
 .project__demo {
   margin: 4rem 8rem 0rem 8rem;

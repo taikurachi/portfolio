@@ -13,10 +13,12 @@
   width: 100%;
 }
 
+.third__steps {
+  margin: 0rem 12rem 0rem 12rem;
+}
 @media only screen and (max-width: 804px) {
   .third .steps {
     gap: 2.5rem;
-    font-weight: 500;
     font-size: 4vw;
   }
 }
