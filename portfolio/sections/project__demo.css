@@ -332,6 +332,16 @@
     font-size: 1rem;
   }
 }
+@media only screen and (max-width: 500px) {
+  .laptop__container .laptopVid__container {
+    position: absolute;
+    width: 286px;
+    height: 180px;
+
+    transform: translate(0px, -7px);
+    overflow: hidden;
+  }
+}
 
 @media only screen and (max-width: 470px) {
   .stashIt__header {
@@ -352,7 +362,7 @@
     width: 286px;
     height: 180px;
 
-    transform: translate(0px, -7px);
+    /* transform: translate(0px, -7px); */
     overflow: hidden;
   }
   .phoneImg__container {
@@ -436,7 +446,7 @@
 
 .viewCode:hover {
   background: white;
-  /* border: none; */
+
   color: #16181d;
   transition: all 0.3s ease;
 }
