@@ -1,5 +1,4 @@
 .navbar {
-  /* height: 100px; */
   background: transparent;
 }
 
@@ -11,4 +10,5 @@
   gap: 2rem;
   font-size: 1.5rem;
   font-weight: 300;
+  opacity: 0;
 }
