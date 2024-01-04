@@ -53,9 +53,10 @@ const mess = document.querySelector("#message");
 function sendEmail() {
   const bodyMessage = `Full Name: ${fullName.value}<br> Email: ${email.value}<br> Message: ${mess.value} `;
   Email.send({
-    Host: "smtp.elasticemail.com",
-    Username: "taisei.kurachi@nyu.edu",
-    Password: "024FBE6F0C440ABE96B2871E16E2562F226E",
+    SecureToken: "bcbba538-50aa-4834-8493-7f68a35ca8c8",
+    // Host: "smtp.elasticemail.com",
+    // Username: "taisei.kurachi@nyu.edu",
+    // Password: "024FBE6F0C440ABE96B2871E16E2562F226E",
     To: "Burichan523@gmail.com",
     From: "tk2958@nyu.edu",
     Subject: "Let's Talk",
