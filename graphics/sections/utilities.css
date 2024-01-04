@@ -32,6 +32,14 @@ body {
   flex-direction: column;
   gap: 6rem;
   align-items: center;
+  justify-content: center;
+}
+
+.project__demo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .project__header {
@@ -44,6 +52,9 @@ body {
 .project__description {
   font-size: 2rem;
   text-align: center;
+  font-weight: 200;
+  width: 90%;
+  /* border: 2px solid red; */
 }
 
 @media only screen and (max-width: 400px) {
@@ -81,7 +92,7 @@ body {
 
 @media only screen and (max-width: 600px) {
   .project__demo {
-    gap: 2rem;
+    /* gap: 2rem; */
   }
   .content .flexColumn {
     gap: 2rem;
