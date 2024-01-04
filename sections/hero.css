@@ -54,3 +54,18 @@
   transform: translateY(150px);
   transition: transform 0.5s;
 }
+
+@media screen and (max-width: 1000px) {
+  .char {
+    transform: translateY(0px);
+  }
+  .hero__content .horizontalLine {
+    opacity: 1;
+  }
+  .location {
+    transform: translateX(0px);
+  }
+  .jobTitle {
+    transform: translateX(0px);
+  }
+}

@@ -1,39 +1,52 @@
-const myText = new SplitType(".name");
+function isDesktop() {
+  return window.innerWidth > 1000;
+}
 
-gsap.to(".char", {
-  y: 0,
-  stagger: 0.05,
-  delay: 0.8,
-  duration: 0.1,
-});
+function desktopAnimations() {
+  const myText = new SplitType(".name");
 
-gsap.to(".hi", {
-  x: 0,
-  duration: 1,
-  ease: "power2.inOut",
-});
+  gsap.to(".char", {
+    y: 0,
+    stagger: 0.05,
+    delay: 0.8,
+    duration: 0.1,
+  });
 
-gsap.to(".horizontalLine", {
-  opacity: 1,
-  delay: 1.6,
-});
+  gsap.to(".hi", {
+    x: 0,
+    duration: 1,
+    ease: "power2.inOut",
+  });
 
-gsap.to(".jobTitle", {
-  x: 0,
-  duration: 1,
-  delay: 1.65,
-  ease: "power2.inOut",
-});
-gsap.to(".location", {
-  x: 0,
-  duration: 1,
-  delay: 1.65,
-  ease: "power2.inOut",
-});
+  gsap.to(".horizontalLine", {
+    opacity: 1,
+    delay: 1.6,
+  });
 
-gsap.to(".navbar__container", {
-  opacity: 1,
-  delay: 2.6,
+  gsap.to(".jobTitle", {
+    x: 0,
+    duration: 1,
+    delay: 1.65,
+    ease: "power2.inOut",
+  });
+  gsap.to(".location", {
+    x: 0,
+    duration: 1,
+    delay: 1.65,
+    ease: "power2.inOut",
+  });
+
+  gsap.to(".navbar__container", {
+    opacity: 1,
+    delay: 2.6,
+  });
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  console.log("is desktop");
+  if (isDesktop()) {
+    desktopAnimations();
+  }
 });
 
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {

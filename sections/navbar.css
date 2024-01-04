@@ -12,3 +12,9 @@
   font-weight: 300;
   opacity: 0;
 }
+
+@media screen and (max-width: 1000px) {
+  .navbar__container {
+    opacity: 1;
+  }
+}
