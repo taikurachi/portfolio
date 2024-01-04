@@ -9,6 +9,7 @@ function desktopAnimations() {
     y: 0,
     stagger: 0.05,
     delay: 0.8,
+    opacity: 1,
     duration: 0.1,
   });
 

@@ -53,6 +53,7 @@
 .char {
   transform: translateY(150px);
   transition: transform 0.5s;
+  opacity: 0;
 }
 
 @media screen and (max-width: 1000px) {
