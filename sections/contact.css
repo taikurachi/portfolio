@@ -111,14 +111,20 @@
   align-self: flex-end;
 }
 
-.submit__btn button {
+.submit__btn {
   padding: 15px 25px;
   font-size: 1.2rem;
   font-weight: 700;
   border-radius: 15px;
   border: none;
   color: black;
-  background: lightgreen;
+  background: rgb(144, 238, 144);
+  transition: background 0.2s ease;
+}
+
+.submit__btn:hover {
+  background: rgb(144, 255, 144);
+  transition: all 0.2s ease;
 }
 
 .spotify__content {
