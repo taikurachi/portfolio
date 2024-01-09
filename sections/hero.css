@@ -10,7 +10,6 @@
   flex-direction: column;
   gap: 2rem;
   max-width: 1600px;
-
   z-index: -1;
 }
 
@@ -22,6 +21,7 @@
 .name {
   white-space: nowrap;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  /* opacity: 0; */
 }
 .hi {
   font-size: 10rem;

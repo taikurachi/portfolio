@@ -72,7 +72,7 @@
   gap: 0.4rem;
 }
 
-.contact__name p {
+.contact__name label {
   font-size: 1.2rem;
   font-weight: 700;
 }
@@ -82,7 +82,7 @@
   flex-direction: column;
   gap: 0.4rem;
 }
-.contact__email p {
+.contact__email label {
   font-size: 1.2rem;
   font-weight: 700;
 }
@@ -93,7 +93,7 @@
   gap: 0.4rem;
 }
 
-.contact__message p {
+.contact__message label {
   font-size: 1.2rem;
   font-weight: 700;
 }
