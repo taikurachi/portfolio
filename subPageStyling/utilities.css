@@ -16,6 +16,13 @@
   font-weight: 300;
 }
 
+.headerDescription__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
 @media only screen and (max-width: 1000px) {
   .project__description {
     font-size: 1.6rem;
@@ -37,5 +44,11 @@
     font-size: 2.6rem;
     letter-spacing: 1px;
     font-weight: 800;
+  }
+  .project__description {
+    font-size: 0.8rem;
+  }
+  .headerDescription__container {
+    gap: 1rem;
   }
 }

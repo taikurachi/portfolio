@@ -19,6 +19,11 @@
   align-items: center;
   gap: 4rem;
 }
+.project__details {
+  display: flex;
+  gap: 5rem;
+  font-weight: 200;
+}
 
 .project__display {
   position: relative;
@@ -167,5 +172,9 @@
 @media only screen and (max-width: 400px) {
   .project__demo {
     margin-top: 2rem;
+  }
+  .project__details {
+    gap: 1.9rem;
+    font-size: 0.7rem;
   }
 }

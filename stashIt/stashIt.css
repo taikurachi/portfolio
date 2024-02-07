@@ -13,12 +13,6 @@ body {
     hue-rotate(255deg) brightness(109%) contrast(101%);
 }
 
-.stashIt__details {
-  display: flex;
-  gap: 5rem;
-  font-weight: 200;
-}
-
 /* stash it images layout for first step */
 .first {
   text-align: center;
@@ -271,10 +265,5 @@ body {
 @media only screen and (max-width: 400px) {
   .project__demo .stashItLogo__container {
     width: 300px;
-  }
-  .stashIt__details {
-    display: flex;
-    gap: 1.9rem;
-    font-size: 0.7rem;
   }
 }
