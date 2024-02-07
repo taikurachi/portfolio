@@ -14,13 +14,6 @@ body {
 }
 
 /* stash it images layout for first step */
-.first {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-  margin: 0rem 8rem 0rem 8rem;
-}
 
 .firstImg__layout {
   display: grid;
@@ -48,12 +41,6 @@ body {
   }
 }
 
-@media only screen and (max-width: 804px) {
-  .first {
-    margin: 0rem 4rem 0rem 4rem;
-  }
-}
-
 @media only screen and (max-width: 450px) {
   .first .firstImg__layout {
     display: grid;
@@ -62,48 +49,16 @@ body {
   }
 }
 
-@media only screen and (max-width: 430px) {
-  .first {
-    margin: 0rem 1rem 0rem 1rem;
-  }
-}
-
 /* stash it images layout for second step */
-.second {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-  margin: 0rem 8rem 0rem 8rem;
-}
 
 .secondImg__layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
-
   gap: 5rem;
 }
 
-.design1 {
+.designs {
   width: 100%;
-}
-
-.design2 {
-  width: 100%;
-}
-
-.design3 {
-  width: 100%;
-  /* margin-top: -50px; */
-}
-.design4 {
-  width: 100%;
-}
-
-@media only screen and (max-width: 804px) {
-  .second {
-    margin: 0rem 4rem 0rem 4rem;
-  }
 }
 
 @media only screen and (max-width: 430px) {
@@ -111,9 +66,6 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
-  }
-  .second {
-    margin: 0rem 1rem 0rem 1rem;
   }
 }
 
@@ -134,13 +86,6 @@ body {
 }
 
 /* stash it third step images layout */
-.third {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  margin: 0rem 8rem 0rem 8rem;
-  gap: 3rem;
-}
 
 .thirdImg__layout {
   display: grid;
@@ -148,10 +93,7 @@ body {
   gap: 5rem;
 }
 
-.finalDesignDesktop {
-  width: 100%;
-}
-.finalDesignMobile {
+.finalDesigns {
   width: 100%;
 }
 
@@ -172,10 +114,6 @@ body {
 }
 
 @media only screen and (max-width: 804px) {
-  .third {
-    margin: 0rem 4rem 0rem 4rem;
-  }
-
   .thirdImg__layout {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -232,10 +170,6 @@ body {
     grid-column-start: 2;
     grid-column-end: -1;
     margin-top: -40px;
-  }
-
-  .third {
-    margin: 0rem 1rem 0rem 1rem;
   }
 }
 

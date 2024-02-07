@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>COLORZ</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="..//subpage.css" />
+    <link rel="stylesheet" href="colorz.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -69,16 +70,16 @@
             loop
             muted
             playsinline
-            class="colorzVid"
+            class="projectImg"
             src="..//images/colorz/colorzVidNew.mp4"
           ></video>
         </div>
         <div class="project__actions">
           <a href="https://taikurachi.github.io/colorz/"
-            ><p class="viewSite">view site</p></a
+            ><p class="colorzActions viewSite-colorz viewSite">view site</p></a
           >
           <a href="https://github.com/taikurachi/colorz"
-            ><p class="viewCode">view code</p></a
+            ><p class="colorzActions viewCode-colorz viewSite">view code</p></a
           >
         </div>
       </div>
@@ -86,51 +87,47 @@
         <h1 class="project__how">How I made it</h1>
         <div class="projectSteps__container">
           <ol class="steps">
-            <li>Early Brainstorming & Lo-fi Wireframing</li>
+            <li>Early Wireframes</li>
             <li>Hi-fi Mockups</li>
             <li>Feedback & Iterations</li>
             <li>Coding</li>
           </ol>
         </div>
       </div>
-      <div class="first flexColumn">
-        <h1 class="first__header project__header">
-          1. Early Brainstorming & Wireframing
-        </h1>
-        <p class="first__description project__description">
+      <div class="projects__container">
+        <h1 class="project__header">1. Early Wireframes</h1>
+        <p class="project__description">
           Since I've alawys enjoyed typing games, I wanted to create my own. I
           decided I want to create a color typing game that required the user to
           type a given color basaed on what appeared on the screen. Here's what
           I came up with.
         </p>
-        <div class="firstImg__container">
+        <div class="projectImg__container">
           <img
             src="..//images/colorz/colorzDesign.jpeg"
             alt="designing colorz"
-            class="firstImg"
+            class="projectImg"
           />
         </div>
       </div>
-      <div class="second flexColumn">
-        <h1 class="second__header project__header">2. Coding</h1>
-        <p class="second__description project__description">
+      <div class="projects__container">
+        <h1 class="project__header">2. Coding</h1>
+        <p class="project__description">
           I translated my desings into HTML, CSS and JavaScript. For this
           project, I decided I was only going to use vanilla JavaScript in order
           to gain a broader understanding of the fundamentals.
         </p>
-        <div class="secondImg__container">
+        <div class="projectImg__container">
           <img
             src="..//images/colorz/colorzCoding.png"
             alt="coding image of colorz"
-            class="secondImg"
+            class="projectImg"
           />
         </div>
       </div>
-      <div class="third flexColumn">
-        <div class="third__header project__header">
-          3. User Testing & Iterations
-        </div>
-        <div class="third__description project__description">
+      <div class="projects__container">
+        <div class="project__header">3. User Testing & Iterations</div>
+        <div class="project__description">
           Feedback & suggestions from user testing.
         </div>
         <ol class="steps third__steps">
@@ -145,17 +142,17 @@
           </li>
         </ol>
 
-        <div class="thirdImg__container">
+        <div class="projectImg__container">
           <img
             src="..//images//colorz/gameOver.png"
             alt="game over image"
-            class="thirdImg"
+            class="projectImg"
           />
         </div>
       </div>
-      <div class="fourth flexColumn">
-        <h1 class="fourth__header project__header">4. Debugging</h1>
-        <p class="fourth__desription project__description">
+      <div class="projects__container">
+        <h1 class="project__header">4. Debugging</h1>
+        <p class="project__description">
           Upon trying to implement these new features, I encountered tons of new
           bugs and issues. One of them was the "game over" screen appearing
           multiple times after the game had ended. I fixed this issue by setting

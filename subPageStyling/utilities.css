@@ -16,6 +16,17 @@
   font-weight: 300;
 }
 
+.projects__container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin: 0rem 8rem 0rem 8rem;
+}
+
+.projectImg {
+  width: 100%;
+}
 .headerDescription__container {
   display: flex;
   flex-direction: column;
@@ -29,6 +40,11 @@
   }
 }
 
+@media only screen and (max-width: 800px) {
+  .projects__container {
+    margin: 0rem 4rem 0rem 4rem;
+  }
+}
 @media only screen and (max-width: 700px) {
   .project__description {
     font-size: 1.2rem;
@@ -37,6 +53,9 @@
 @media only screen and (max-width: 540px) {
   .project__description {
     font-size: 1rem;
+  }
+  .projects__container {
+    gap: 2rem;
   }
 }
 @media only screen and (max-width: 400px) {
@@ -50,5 +69,8 @@
   }
   .headerDescription__container {
     gap: 1rem;
+  }
+  .projects__container {
+    margin: 0rem 1rem 0rem 1rem;
   }
 }

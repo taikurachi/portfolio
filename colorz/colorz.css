@@ -1,31 +1,41 @@
 @font-face {
   font-family: myFont;
-  src: url(../RubikDoodleShadow-Regular.ttf);
+  src: url(RubikDoodleShadow-Regular.ttf);
 }
 
-.project__details {
-  display: flex;
-  gap: 5rem;
-  font-weight: 200;
+.navbar__items {
+  color: black;
+}
+.navbar__items::after {
+  background: black;
+}
+body {
+  background-image: linear-gradient(
+    to right,
+    rgb(221, 215, 198),
+    rgb(218, 246, 215),
+    rgb(249, 222, 237),
+    rgb(196, 236, 253),
+    rgb(249, 222, 237),
+    rgb(218, 246, 215),
+    rgb(221, 215, 198)
+  );
+
+  background-size: 300%;
+  animation: animate-gradient 30s linear infinite;
+  color: black;
 }
 
-.timeline__container {
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
-}
-.role__container {
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
-}
-
-.role__container p {
-  width: 150px;
-}
-
-.colorzVid {
-  width: 100%;
+@keyframes animate-gradient {
+  0% {
+    background-position: 0% 25%;
+  }
+  50% {
+    background-position: 30% 75%;
+  }
+  100% {
+    background-position: 140% 50%;
+  }
 }
 
 .project__name {
@@ -33,34 +43,28 @@
   font-weight: 800;
   font-family: myFont;
 }
-.project__demo {
-  margin: 4rem 8rem 0rem 8rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4rem;
-}
 
-.viewSite {
-  padding: 15px 50px 15px 50px;
-  border-radius: 20px;
-  /* border: none; */
-  font-size: 2rem;
+.colorzActions {
   color: black;
   background: white;
+  position: absolute;
+  inset: -2px;
+  z-index: -1;
+  background-origin: border-box;
+  border-radius: 25px;
+  border: inherit;
   transition: all 0.2s ease;
   border: 2px solid transparent;
   position: relative;
   font-weight: 100;
-  /* transition: outline 0.2s ease; */
 }
 
-.viewSite:hover {
+.viewSite-colorz:hover {
   background: none;
   transition: all 0.2s ease;
   letter-spacing: 3px;
 }
-.viewSite:hover:before {
+.viewSite-colorz:hover:before {
   content: "";
   background-image: conic-gradient(
     from var(--angle),
@@ -77,8 +81,6 @@
   background-origin: border-box;
   border-radius: inherit;
   border: inherit;
-  /* border-style: inherit; */
-
   mask-image: linear-gradient(black, black), linear-gradient(black, black);
   mask-clip: content-box, border-box;
   mask-composite: exclude;
@@ -96,24 +98,13 @@
     --angle: 1turn;
   }
 }
-.viewCode {
-  padding: 15px 50px 15px 50px;
-  border-radius: 20px;
-  background: black;
-  font-size: 2rem;
-  color: white;
-  border: 2px solid transparent;
-  transition: all 0.3s ease;
-  position: relative;
-  font-weight: 100;
-}
 
-.viewCode:hover {
+.viewCode-colorz:hover {
   background: none;
   transition: all 0.2s ease;
   letter-spacing: 3px;
 }
-.viewCode:hover:before {
+.viewCode-colorz:hover:before {
   content: "";
   background-image: conic-gradient(
     from var(--angle),
@@ -130,55 +121,71 @@
   background-origin: border-box;
   border-radius: inherit;
   border: inherit;
-  /* border-style: inherit; */
-
   mask-image: linear-gradient(black, black), linear-gradient(black, black);
   mask-clip: content-box, border-box;
   mask-composite: exclude;
   animation: spin 3s linear infinite;
 }
-.project__actions {
-  display: flex;
-  justify-content: center;
-  gap: 5rem;
+
+.next__project {
+  padding: 30px 60px 30px 60px;
+  font-size: 3rem;
+  border: none;
+  border-radius: 25px;
+  border: 1px solid black;
+  color: black;
+  background: none;
+  transition: all 0.3s ease;
+  font-weight: 800;
 }
 
-@media only screen and (max-width: 550px) {
-  .viewCode:hover {
-    background: none;
-    transition: all 0.2s ease;
-    letter-spacing: 0px;
-  }
-  .viewSite:hover {
-    background: none;
-    transition: all 0.2s ease;
-    letter-spacing: 0px;
-  }
+.next__project:hover {
+  box-shadow: 0px 0px 20px black;
+  transition: all 0.3s ease;
+}
+.next__project p {
+  width: 300px;
+  text-align: center;
+}
+
+.next__btn {
+  padding-bottom: 10rem;
 }
 @media only screen and (max-width: 804px) {
-  .project__demo {
-    margin: 2rem 4rem 0rem 4rem;
-  }
   .project__name {
     font-size: 6rem;
   }
 }
 
 @media only screen and (max-width: 700px) {
-  .project__demo .project__actions {
-    gap: 4rem;
-  }
   .project__name {
     font-size: 5rem;
   }
 }
 
-@media only screen and (max-width: 600px) {
-  .project__demo {
-    gap: 2rem;
+@media screen and (max-width: 600px) {
+  .next__project {
+    padding: 30px 40px 30px 40px;
+    font-size: 1rem;
+
+    border-radius: 25px;
+  }
+  .next__project p {
+    width: 100px;
+  }
+  .next__btn {
+    padding-bottom: 6rem;
   }
   .project__name {
     font-size: 4.5rem;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .colorzActions:hover {
+    background: none;
+    transition: all 0.2s ease;
+    letter-spacing: 0px;
   }
 }
 
@@ -198,5 +205,10 @@
   }
   .project__name {
     font-size: 4rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .next__btn {
+    padding-bottom: 4rem;
   }
 }
