@@ -1,0 +1,280 @@
+body {
+  background: #2c303a;
+  color: white;
+}
+
+/* introducing project */
+.stashItLogo__container {
+  width: 700px;
+}
+.stashItLogo {
+  width: 100%;
+  filter: brightness(0) saturate(100%) invert(97%) sepia(0%) saturate(2%)
+    hue-rotate(255deg) brightness(109%) contrast(101%);
+}
+
+.stashIt__details {
+  display: flex;
+  gap: 5rem;
+  font-weight: 200;
+}
+
+/* stash it images layout for first step */
+.first {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin: 0rem 8rem 0rem 8rem;
+}
+
+.firstImg__layout {
+  display: grid;
+  gap: 5rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.firstImg {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .firstImg__layout {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .firstImg__layout {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 804px) {
+  .first {
+    margin: 0rem 4rem 0rem 4rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .first .firstImg__layout {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .first {
+    margin: 0rem 1rem 0rem 1rem;
+  }
+}
+
+/* stash it images layout for second step */
+.second {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin: 0rem 8rem 0rem 8rem;
+}
+
+.secondImg__layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 5rem;
+}
+
+.design1 {
+  width: 100%;
+}
+
+.design2 {
+  width: 100%;
+}
+
+.design3 {
+  width: 100%;
+  /* margin-top: -50px; */
+}
+.design4 {
+  width: 100%;
+}
+
+@media only screen and (max-width: 804px) {
+  .second {
+    margin: 0rem 4rem 0rem 4rem;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .second .secondImg__layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .second {
+    margin: 0rem 1rem 0rem 1rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .secondImg__layout {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .secondImg__layout {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* stash it third step images layout */
+.third {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0rem 8rem 0rem 8rem;
+  gap: 3rem;
+}
+
+.thirdImg__layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 5rem;
+}
+
+.finalDesignDesktop {
+  width: 100%;
+}
+.finalDesignMobile {
+  width: 100%;
+}
+
+.dropdownMenu {
+  width: 100%;
+  grid-column-start: 2;
+  grid-column-end: -1;
+  margin-top: -180px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .dropdownMenu {
+    width: 100%;
+    grid-column-start: 2;
+    grid-column-end: -1;
+    margin-top: -140px;
+  }
+}
+
+@media only screen and (max-width: 804px) {
+  .third {
+    margin: 0rem 4rem 0rem 4rem;
+  }
+
+  .thirdImg__layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+  }
+
+  .dropdownMenu {
+    width: 100%;
+    grid-column-start: 2;
+    grid-column-end: -1;
+    margin-top: -55px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .thirdImg__layout {
+    display: grid;
+    gap: 3rem;
+  }
+  .dropdownMenu {
+    width: 100%;
+    grid-column-start: 2;
+    grid-column-end: -1;
+    margin-top: -110px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .thirdImg__layout {
+    display: grid;
+    gap: 2rem;
+  }
+
+  .dropdownMenu {
+    width: 100%;
+    grid-column-start: 2;
+    grid-column-end: -1;
+    margin-top: -80px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .dropdownMenu {
+    width: 100%;
+    grid-column-start: 2;
+    grid-column-end: -1;
+    margin-top: -60px;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .dropdownMenu {
+    width: 100%;
+    grid-column-start: 2;
+    grid-column-end: -1;
+    margin-top: -40px;
+  }
+
+  .third {
+    margin: 0rem 1rem 0rem 1rem;
+  }
+}
+
+/* main media queries */
+@media only screen and (max-width: 1200px) {
+  .stashItLogo__container {
+    width: 500px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .stashIt__header {
+    font-size: 6rem;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .stashIt__header {
+    font-size: 4.7rem;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .project__demo .stashItLogo__container {
+    width: 250px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .project__demo .stashItLogo__container {
+    width: 300px;
+  }
+  .stashIt__details {
+    display: flex;
+    gap: 1.9rem;
+    font-size: 0.7rem;
+  }
+}

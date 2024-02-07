@@ -1,0 +1,15 @@
+@import url(landingPageStyling/about.css);
+@import url(landingPageStyling//contact.css);
+@import url(landingPageStyling//hero.css);
+@import url(landingPageStyling//media__queries.css);
+@import url(landingPageStyling//navbar.css);
+@import url(landingPageStyling//projects.css);
+@import url(landingPageStyling//utilities.css);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", sans-serif;
+  text-decoration: none;
+}
