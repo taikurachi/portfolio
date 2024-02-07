@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="..//subpage.css" />
+    <link rel="stylesheet" href="portfolio.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -54,7 +55,7 @@
           My gallery of work, designed and coded from scratch.
         </p>
 
-        <div class="stashIt__details">
+        <div class="project__details">
           <div class="timeline__container">
             <p>Timeline:</p>
             <p>May 2023 - Present</p>
@@ -66,14 +67,13 @@
         </div>
         <div class="project__display">
           <div class="laptopPhoneAutoplay__container">
-            <div class="laptop__container">
-              <div class="laptopImg__container">
-                <img
-                  class="laptopImg"
-                  src="..//images/stashItImages/laptopImg.png"
-                  alt="laptop image"
-                />
-              </div>
+            <div class="laptopImg__container">
+              <img
+                decoding="async"
+                class="laptopImg"
+                src="..//images/stashItImages/laptopImgResized.png"
+                alt="laptop image"
+              />
               <div class="laptopVid__container">
                 <video
                   preload="auto"
@@ -81,26 +81,25 @@
                   loop
                   muted
                   playsinline
-                  src="..//images/portfolio/portfolioDesktopFinal.mp4"
+                  src="..//images/stashItImages/stashItDesktopFinal.mp4"
                 ></video>
               </div>
             </div>
-
             <div class="phoneImg__container">
               <img
+                decoding="async"
                 class="phoneImg"
-                src="..//images/stashItImages/phoneScreenFinal.png"
+                src="..//images/stashItImages/phoneScreenResized.png"
                 alt="phone image"
-                class="alignnone size-full wp-image-330478"
               />
               <div class="phoneVid__container">
                 <video
                   preload="auto"
                   autoplay="autoplay"
-                  loop
-                  muted
-                  playsinline
-                  src="..//images/portfolio/portfolioMobileFinal.mp4"
+                  loop=""
+                  muted=""
+                  playsinline=""
+                  src="..//images/stashItImages/stashItMobileFinalCompressed.mp4"
                 ></video>
               </div>
             </div>
@@ -112,7 +111,7 @@
           >
         </div>
       </div>
-      <div class="project__steps flexColumn">
+      <div class="project__steps">
         <h1 class="project__how">How I made it</h1>
         <div class="projectSteps__container">
           <ol class="steps">
@@ -123,11 +122,9 @@
           </ol>
         </div>
       </div>
-      <div class="first flexColumn">
-        <h1 class="first__header project__header">
-          1. Early Brainstorming & Wireframing
-        </h1>
-        <p class="first__description project__description">
+      <div class="projects__container">
+        <h1 class="project__header">1. Early Brainstorming & Wireframing</h1>
+        <p class="project__description">
           Since I've alawys enjoyed typing games, I wanted to create my own. I
           decided I want to create a color typing game that required the user to
           type a given color basaed on what appeared on the screen. Here's what
@@ -138,21 +135,21 @@
             <img
               src="..//images/portfolio/lofi1.png"
               alt="portfolio lofi design"
-              class="firstImg"
+              class="projectImg"
             />
           </div>
           <div class="lofi2Img__container">
             <img
               src="..//images/portfolio/lofi.png"
               alt="portfolio lofi design 2"
-              class="secondImg"
+              class="projectImg"
             />
           </div>
         </div>
       </div>
-      <div class="second flexColumn">
-        <h1 class="second__header project__header">2. Hi-Fi Mockups</h1>
-        <p class="second__description project__description">
+      <div class="projects__container">
+        <h1 class="project__header">2. Hi-Fi Mockups</h1>
+        <p class="project__description">
           Next, I translated these FigJam illustrations into high fidelity Figma
           designs.
         </p>
@@ -160,13 +157,13 @@
           <img
             src="..//images/portfolio/hiFi.png"
             alt="portfolio hiFi design"
-            class="secondImg"
+            class="projectImg"
           />
         </div>
       </div>
-      <div class="third flexColumn">
-        <h1 class="third__header project__header">3. Coding</h1>
-        <p class="third__description project__description">
+      <div class="projects__container">
+        <h1 class="project__header">3. Coding</h1>
+        <p class="project__description">
           Finally, I utilized HTML, CSS, JavaScript to bring these Figma designs
           to life.
         </p>

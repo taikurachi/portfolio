@@ -151,33 +151,19 @@ body {
 .next__btn {
   padding-bottom: 10rem;
 }
-@media only screen and (max-width: 804px) {
-  .project__name {
-    font-size: 6rem;
-  }
-}
-
-@media only screen and (max-width: 700px) {
-  .project__name {
-    font-size: 5rem;
-  }
-}
 
 @media screen and (max-width: 600px) {
   .next__project {
     padding: 30px 40px 30px 40px;
     font-size: 1rem;
 
-    border-radius: 25px;
+    border-radifus: 25px;
   }
   .next__project p {
     width: 100px;
   }
   .next__btn {
     padding-bottom: 6rem;
-  }
-  .project__name {
-    font-size: 4.5rem;
   }
 }
 
@@ -202,9 +188,6 @@ body {
   .project__actions .viewCode {
     padding: 15px;
     font-size: 1.4rem;
-  }
-  .project__name {
-    font-size: 4rem;
   }
 }
 @media screen and (max-width: 400px) {

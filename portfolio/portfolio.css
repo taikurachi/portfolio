@@ -1,0 +1,11 @@
+body {
+  background: #c8f5e3;
+}
+
+.navbar__items {
+  color: black;
+}
+
+.navbar__items::after {
+  background: black;
+}
