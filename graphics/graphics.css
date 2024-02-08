@@ -1,0 +1,82 @@
+body {
+  background-image: linear-gradient(
+    to right,
+    rgb(218, 120, 215),
+    rgb(218, 120, 215),
+    rgb(160, 100, 237),
+    rgb(228, 161, 255),
+    rgb(160, 100, 237),
+    rgb(218, 120, 215),
+    rgb(218, 120, 215)
+  );
+
+  background-size: 300%;
+  animation: animate-gradient 30s linear infinite;
+  color: white;
+}
+
+@keyframes animate-gradient {
+  0% {
+    background-position: 0% 25%;
+  }
+  50% {
+    background-position: 30% 75%;
+  }
+  100% {
+    background-position: 140% 50%;
+  }
+}
+
+.vertical__graphic {
+  width: 100%;
+}
+
+.project__gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  margin: 0rem 8rem;
+}
+
+.horizontal__graphic {
+  width: 100%;
+  grid-column: span 2;
+}
+
+.next__project::after {
+  width: 34%;
+  height: 150%;
+  top: -10%;
+  filter: brightness(0) saturate(100%) invert(97%) sepia(0%) saturate(2%)
+    hue-rotate(255deg) brightness(109%) contrast(101%);
+}
+.next__project:hover::after {
+  right: -31%;
+}
+
+@media screen and (max-width: 1000px) {
+  .project__gallery {
+    gap: 3.5rem;
+    margin: 0rem 4rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .project__gallery {
+    gap: 3rem;
+    margin: 0rem 4rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .project__gallery {
+    gap: 2rem;
+    margin: 0rem 2.5rem;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  .content .project__gallery {
+    gap: 0.9rem;
+    margin: 0rem 1rem;
+  }
+}
