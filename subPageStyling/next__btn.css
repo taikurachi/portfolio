@@ -1,23 +1,32 @@
 .next__project {
-  padding: 10% 0% 10% 0%;
   font-size: 6rem;
   border-radius: 20%;
-  color: black;
+  color: white;
   background: none;
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
   font-weight: 800;
   display: flex;
   justify-content: center;
+  position: relative;
 }
 
 .next__project:hover {
-  outline: 1px solid black;
-  transition: all 0.1s ease;
+  transition: all 0.4s ease;
+  margin-left: -40px;
 }
 
-.next__project p {
-  width: 100%;
-  text-align: center;
+.next__project::after {
+  content: "→";
+  position: absolute;
+  top: 0;
+  right: -100px;
+  color: white;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+.next__project:hover::after {
+  transition: all 0.4s ease;
+  opacity: 1;
 }
 
 .next__btn {

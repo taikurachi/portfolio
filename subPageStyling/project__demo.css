@@ -25,6 +25,11 @@
   font-weight: 200;
 }
 
+.project__actions {
+  display: flex;
+  gap: 5rem;
+}
+
 .project__name {
   font-size: 7rem;
   font-weight: 800;
@@ -99,42 +104,18 @@
 .phoneVid__container video {
   width: 100%;
 }
-.project__actions {
-  display: flex;
-  justify-content: center;
-  gap: 5rem;
-}
 
-.viewSite {
-  padding: 15px 50px 15px 50px;
-  border-radius: 20px;
-  border: none;
-  font-size: 2rem;
-  color: white;
-  background: none;
+.viewButton {
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 1.8rem;
   border: 1px solid white;
   transition: all 0.3s ease;
-  font-weight: 100;
-}
-
-.viewCode {
-  padding: 15px 50px 15px 50px;
-  border-radius: 20px;
-  border: none;
-  font-size: 2rem;
+  font-weight: 200;
   color: white;
-  background: none;
-  border: 1px solid white;
-  transition: all 0.3s ease;
-  font-weight: 100;
 }
 
-.viewSite:hover {
-  background: white;
-  color: #16181d;
-  transition: all 0.3s ease;
-}
-.viewCode:hover {
+.viewButton:hover {
   background: white;
   color: #16181d;
   transition: all 0.3s ease;
@@ -157,19 +138,27 @@
   .project__demo {
     gap: 2rem;
   }
+  .viewButton {
+    transform: translateY(20px);
+  }
 }
+@media only screen and (max-width: 550px) {
+  .viewButton {
+    padding: 6px 15px;
+    font-size: 1.6rem;
+  }
+
+  .project__actions {
+    gap: 3.5rem;
+  }
+}
+
 @media only screen and (max-width: 450px) {
   .project__demo .project__actions {
     gap: 2rem;
   }
 
-  .project__actions .viewSite {
-    padding: 15px;
-    font-size: 1.4rem;
-  }
-
-  .project__actions .viewCode {
-    padding: 15px;
+  .viewButton {
     font-size: 1.4rem;
   }
 }
