@@ -9,3 +9,42 @@ body {
 .navbar__items::after {
   background: black;
 }
+
+.firstImg__container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.viewCode {
+  padding: 15px 50px 15px 50px;
+  border-radius: 20px;
+  border: none;
+  font-size: 2rem;
+  color: black;
+  background: none;
+  border: 1px solid black;
+  transition: all 0.3s ease;
+  font-weight: 100;
+}
+
+.viewCode:hover {
+  background: black;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+/* .next__project {
+  border-radius: 25px;
+  border: 1px solid black;
+  color: black;
+  background: none;
+  transition: all 0.3s ease;
+  font-weight: 800;
+}
+
+.next__project:hover {
+  box-shadow: 0px 0px 20px black;
+  scale: 1.05;
+  transition: all 0.3s ease;
+} */

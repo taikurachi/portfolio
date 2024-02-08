@@ -83,9 +83,9 @@
           >
         </div>
       </div>
-      <div class="project__steps flexColumn">
-        <h1 class="project__how">How I made it</h1>
-        <div class="projectSteps__container">
+      <div class="project__steps">
+        <h1 class="project__header">How I made it</h1>
+        <div class="steps__container">
           <ol class="steps">
             <li>Early Wireframes</li>
             <li>Hi-fi Mockups</li>
@@ -95,13 +95,15 @@
         </div>
       </div>
       <div class="projects__container">
-        <h1 class="project__header">1. Early Wireframes</h1>
-        <p class="project__description">
-          Since I've alawys enjoyed typing games, I wanted to create my own. I
-          decided I want to create a color typing game that required the user to
-          type a given color basaed on what appeared on the screen. Here's what
-          I came up with.
-        </p>
+        <div class="project__text">
+          <h1 class="project__header">Early Wireframes</h1>
+          <p class="project__description">
+            Since I've alawys enjoyed typing games, I wanted to create my own. I
+            decided I want to create a color typing game that required the user
+            to type a given color basaed on what appeared on the screen. Here's
+            what I came up with.
+          </p>
+        </div>
         <div class="projectImg__container">
           <img
             src="..//images/colorz/colorzDesign.jpeg"
@@ -111,12 +113,14 @@
         </div>
       </div>
       <div class="projects__container">
-        <h1 class="project__header">2. Coding</h1>
-        <p class="project__description">
-          I translated my desings into HTML, CSS and JavaScript. For this
-          project, I decided I was only going to use vanilla JavaScript in order
-          to gain a broader understanding of the fundamentals.
-        </p>
+        <div class="project__text">
+          <h1 class="project__header">Coding</h1>
+          <p class="project__description">
+            I translated my desings into HTML, CSS and JavaScript. For this
+            project, I decided I was only going to use vanilla JavaScript in
+            order to gain a broader understanding of the fundamentals.
+          </p>
+        </div>
         <div class="projectImg__container">
           <img
             src="..//images/colorz/colorzCoding.png"
@@ -125,12 +129,15 @@
           />
         </div>
       </div>
-      <div class="projects__container">
-        <div class="project__header">3. User Testing & Iterations</div>
-        <div class="project__description">
-          Feedback & suggestions from user testing.
+      <!-- <div class="project__steps">
+        <div class="project__text">
+          <h1 class="project__header">User Testing</h1>
+          <p class="project__description">
+            Feedback & suggestions from user testing.
+          </p>
         </div>
-        <ol class="steps third__steps">
+
+        <ol class="steps">
           <li class="steps__item">Increase in difficulty as score increases</li>
           <li class="steps__item">Include a game over screen</li>
           <li class="steps__item">
@@ -149,21 +156,44 @@
             class="projectImg"
           />
         </div>
+      </div> -->
+      <div class="full__container">
+        <div class="project__steps">
+          <div class="project__text">
+            <h1 class="project__header">User Testing</h1>
+            <p class="project__description">
+              Feedback & suggestions from user testing
+            </p>
+          </div>
+          <div class="steps__container">
+            <ol class="steps">
+              <li>Increase in difficulty as score increases</li>
+              <li>Include a game over screen</li>
+              <li>Adding a collision detection system within the viewport</li>
+              <li>Play again button</li>
+              <li>
+                Add a homepage so the game doesn't doesn't start immediately
+              </li>
+            </ol>
+          </div>
+        </div>
       </div>
       <div class="projects__container">
-        <h1 class="project__header">4. Debugging</h1>
-        <p class="project__description">
-          Upon trying to implement these new features, I encountered tons of new
-          bugs and issues. One of them was the "game over" screen appearing
-          multiple times after the game had ended. I fixed this issue by setting
-          up a boolean flag so that the function only happens once.
-        </p>
+        <div class="project__text">
+          <h1 class="project__header">Debugging</h1>
+          <p class="project__description">
+            Upon trying to implement these new features, I encountered tons of
+            new bugs and issues. One of them was the "game over" screen
+            appearing multiple times after the game had ended. I fixed this
+            issue by setting up a boolean flag so that the function only happens
+            once.
+          </p>
+        </div>
       </div>
-
       <div class="next__btn">
         <a href="https://taiseikurachi.xyz/portfolio/" class=""
           ><div class="next__project">
-            <p>Next Project: Portfolio</p>
+            <p class="project__header">Portfolio</p>
           </div></a
         >
       </div>
