@@ -1,6 +1,5 @@
 .next__project {
   font-size: 6rem;
-  border-radius: 20%;
   color: white;
   background: none;
   transition: all 0.4s ease;
@@ -16,17 +15,23 @@
 }
 
 .next__project::after {
-  content: "→";
+  /* content: "→"; */
+  content: "";
   position: absolute;
-  top: 0;
+  height: 100%;
+  width: 40%;
+  top: 25%;
   opacity: 0;
   right: 0;
   color: white;
   transition: all 0.4s ease;
+  background-image: url(arrow-symbol.svg);
+  background-size: cover;
+  transform: rotate(180deg);
 }
 .next__project:hover::after {
   transition: all 0.4s ease;
-  right: -46%;
+  right: -35%;
   opacity: 1;
 }
 

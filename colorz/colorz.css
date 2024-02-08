@@ -39,8 +39,6 @@ body {
 }
 
 .project__name {
-  font-size: 7rem;
-  font-weight: 800;
   font-family: myFont;
 }
 
@@ -49,7 +47,6 @@ body {
   background: white;
   position: absolute;
   inset: -2px;
-  z-index: -1;
   background-origin: border-box;
   border-radius: 25px;
   border: inherit;
@@ -59,12 +56,12 @@ body {
   font-weight: 100;
 }
 
-.viewSite-colorz:hover {
+.colorzActions:hover {
   background: none;
   transition: all 0.2s ease;
   letter-spacing: 3px;
 }
-.viewSite-colorz:hover:before {
+.colorzActions:hover:before {
   content: "";
   background-image: conic-gradient(
     from var(--angle),
@@ -99,36 +96,15 @@ body {
   }
 }
 
-.viewCode-colorz:hover {
-  background: none;
-  transition: all 0.2s ease;
-  letter-spacing: 3px;
-}
-.viewCode-colorz:hover:before {
-  content: "";
-  background-image: conic-gradient(
-    from var(--angle),
-    rgb(221, 115, 198),
-    rgb(188, 246, 215),
-    rgb(255, 161, 213),
-    rgb(25, 151, 205),
-    rgb(188, 246, 215),
-    rgb(255, 161, 213)
-  );
-  position: absolute;
-  inset: -2px;
-  z-index: -1;
-  background-origin: border-box;
-  border-radius: inherit;
-  border: inherit;
-  mask-image: linear-gradient(black, black), linear-gradient(black, black);
-  mask-clip: content-box, border-box;
-  mask-composite: exclude;
-  animation: spin 3s linear infinite;
-}
-
 .full__container {
   width: 100%;
+}
+
+.next__project {
+  color: black;
+}
+.next__project::after {
+  color: black;
 }
 
 @media only screen and (max-width: 550px) {
@@ -136,21 +112,5 @@ body {
     background: none;
     transition: all 0.2s ease;
     letter-spacing: 0px;
-  }
-}
-
-@media only screen and (max-width: 450px) {
-  .project__demo .project__actions {
-    gap: 2rem;
-  }
-
-  .project__actions .viewSite {
-    padding: 15px;
-    font-size: 1.4rem;
-  }
-
-  .project__actions .viewCode {
-    padding: 15px;
-    font-size: 1.4rem;
   }
 }

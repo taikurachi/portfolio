@@ -32,12 +32,13 @@
   .steps {
     display: flex;
     flex-direction: column;
-    gap: 2.5rem;
-    font-size: 4vw;
+    gap: 0.4rem;
+    font-size: 1.2rem;
   }
 
   .project__steps {
     margin: 0rem 4rem 0rem 4rem;
+    gap: 1rem;
   }
 }
 
@@ -53,11 +54,10 @@
     text-align: center;
   }
 
-  .projectSteps__container .steps {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    font-weight: 500;
-    font-size: 1.2rem;
+  .project__steps {
+    gap: 0.4rem;
+  }
+  .steps {
+    font-size: 0.9rem;
   }
 }
