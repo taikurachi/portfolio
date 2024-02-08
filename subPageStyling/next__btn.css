@@ -15,7 +15,6 @@
 }
 
 .next__project::after {
-  /* content: "→"; */
   content: "";
   position: absolute;
   height: 100%;

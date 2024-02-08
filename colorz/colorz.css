@@ -99,11 +99,7 @@ body {
 .full__container {
   width: 100%;
 }
-
 .next__project {
-  color: black;
-}
-.next__project::after {
   color: black;
 }
 

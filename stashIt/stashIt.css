@@ -185,3 +185,12 @@ body {
     font-size: 4.7rem;
   }
 }
+
+.next__project::after {
+  width: 80%;
+  filter: brightness(0) saturate(100%) invert(97%) sepia(0%) saturate(2%)
+    hue-rotate(255deg) brightness(109%) contrast(101%);
+}
+.next__project:hover::after {
+  right: -70%;
+}

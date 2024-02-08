@@ -32,12 +32,14 @@ body {
   transition: all 0.2s ease-in;
 }
 
-.next__project:hover::after {
-  transition: all 0.4s ease;
-  right: -30%;
-  opacity: 1;
+.next__project::after {
+  width: 45%;
+  filter: brightness(0) saturate(100%) invert(97%) sepia(0%) saturate(2%)
+    hue-rotate(255deg) brightness(109%) contrast(101%);
 }
-
+.next__project:hover::after {
+  right: -43%;
+}
 @media screen and (max-width: 1000px) {
   .gmbLogoImg__container {
     width: 100%;

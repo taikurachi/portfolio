@@ -15,7 +15,9 @@ body {
   flex-direction: column;
   gap: 1rem;
 }
-
+.next__project {
+  color: black;
+}
 .viewCode {
   padding: 15px 50px 15px 50px;
   border-radius: 20px;
@@ -32,4 +34,17 @@ body {
   background: black;
   color: white;
   transition: all 0.3s ease;
+}
+
+.text-align-left__container {
+  width: 84.4%;
+}
+
+.next__project::after {
+  width: 34%;
+  height: 150%;
+  top: 2%;
+}
+.next__project:hover::after {
+  right: -31%;
 }
