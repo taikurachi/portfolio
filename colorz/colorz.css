@@ -127,27 +127,8 @@ body {
   animation: spin 3s linear infinite;
 }
 
-.next__project {
-  font-size: 3rem;
-  color: black;
-  transition: all 0.3s ease;
-  font-weight: 800;
-}
-
 .full__container {
   width: 100%;
-}
-
-@media screen and (max-width: 600px) {
-  .next__project {
-    font-size: 1rem;
-  }
-  .next__project p {
-    width: 100px;
-  }
-  .next__btn {
-    padding-bottom: 6rem;
-  }
 }
 
 @media only screen and (max-width: 550px) {
@@ -171,10 +152,5 @@ body {
   .project__actions .viewCode {
     padding: 15px;
     font-size: 1.4rem;
-  }
-}
-@media screen and (max-width: 400px) {
-  .next__btn {
-    padding-bottom: 4rem;
   }
 }

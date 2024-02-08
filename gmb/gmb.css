@@ -22,182 +22,18 @@ body {
 }
 
 .gmbLogoImg__container {
-  width: 400px;
-}
-
-.gmb__intro {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  gap: 5rem;
-  width: 80%;
-  margin-top: 4rem;
-}
-
-.viewLive {
-  padding: 15px 50px 15px 50px;
-  border-radius: 20px;
-  border: none;
-  font-size: 2rem;
-  border: 1px solid white;
-  color: white;
-  background: none;
-  /* background: #28b1de; */
-  transition: all 0.2s ease;
-  font-weight: 200;
-}
-
-.viewCode {
-  padding: 15px 50px 15px 50px;
-  border-radius: 20px;
-  border: none;
-  font-size: 2rem;
-  border: 1px solid white;
-  color: white;
-  background: none;
-  transition: all 0.2s ease;
-  font-weight: 200;
+  width: 450px;
 }
 
 .viewLive:hover {
-  color: #28b1de;
+  color: white;
+  background: #28b1de;
   border: 1px solid #28b1de;
   transition: all 0.2s ease-in;
 }
 
-.viewCode:hover {
-  color: #e03f85;
-  border: 1px solid #e03f85;
-  transition: all 0.2s ease-in;
-}
-
-.project__img {
-  width: 100%;
-}
-
-.project__display {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.projects__container {
-  margin: 0rem 8rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4rem;
-  text-align: center;
-}
-
-.next__project {
-  padding: 30px 60px 30px 60px;
-  font-size: 3rem;
-  border: none;
-  border-radius: 25px;
-  background: none;
-  border: 1px solid white;
-  color: white;
-  transition: all 0.2s ease;
-  font-weight: 800;
-}
-
-.next__project:hover {
-  box-shadow: 0px 0px 20px white;
-  scale: 1.05;
-  transition: all 0.1s ease;
-}
-
-.next__project p {
-  width: 300px;
-  text-align: center;
-}
-
-.next__btn {
-  padding-bottom: 10rem;
-}
-
-@media screen and (max-width: 800px) {
-  .projects__container {
-    margin: 0rem 4rem;
-    gap: 3rem;
-  }
-  .gmb__intro .gmb__description {
-    width: 80%;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .next__project {
-    padding: 30px 40px 30px 40px;
-    font-size: 1rem;
-
-    border-radius: 25px;
-  }
-  .next__project p {
-    width: 100px;
-  }
-  .next__btn {
-    padding-bottom: 6rem;
-  }
-}
-@media screen and (max-width: 400px) {
-  .next__btn {
-    padding-bottom: 4rem;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .gmb__intro .gmbLogoImg__container {
-    width: 350px;
-  }
-}
-@media screen and (max-width: 500px) {
-  .projects__container {
-    margin: 0rem 2rem;
-
-    gap: 2rem;
-  }
-  .project__actions {
-    gap: 2.5rem;
-  }
-}
-@media screen and (max-width: 400px) {
-  .content .gmb__intro {
-    margin-top: 1rem;
-  }
-  .content {
-    gap: 4rem;
-  }
-  .projects__container {
-    margin: 0rem 1rem;
-
-    gap: 2rem;
-  }
-  .project__actions {
-    gap: 2rem;
-  }
-  .gmb__intro .gmbLogoImg__container {
-    width: 320px;
-  }
-  .gmb__intro .gmb__description {
+@media screen and (max-width: 1000px) {
+  .gmbLogoImg__container {
     width: 100%;
-  }
-  .project__description {
-    font-size: 1rem;
-  }
-  .project__header {
-    font-size: 2rem;
-  }
-  .projects__container .headerDescription__container {
-    gap: 1rem;
-  }
-  .content .next__btn {
-    padding-bottom: 5rem;
-  }
-
-  .navbar__items {
-    font-size: 1.2rem;
   }
 }

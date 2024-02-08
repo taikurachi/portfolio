@@ -185,14 +185,3 @@ body {
     font-size: 4.7rem;
   }
 }
-@media only screen and (max-width: 450px) {
-  .project__demo .stashItLogo__container {
-    /* width: 250px; */
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  .project__demo .stashItLogo__container {
-    /* width: 300px; */
-  }
-}

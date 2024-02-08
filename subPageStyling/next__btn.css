@@ -19,22 +19,36 @@
   content: "→";
   position: absolute;
   top: 0;
-  right: -100px;
-  color: white;
   opacity: 0;
+  right: 0;
+  color: white;
   transition: all 0.4s ease;
 }
 .next__project:hover::after {
   transition: all 0.4s ease;
+  right: -46%;
   opacity: 1;
 }
 
 .next__btn {
   padding-bottom: 10rem;
 }
+@media screen and (min-width: 2000px) {
+  .next__project {
+    font-size: 10rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .next__project {
+    font-size: 4rem;
+  }
+}
 @media screen and (max-width: 600px) {
   .next__btn {
     padding-bottom: 6rem;
+  }
+  .next__project {
+    font-size: 3rem;
   }
 }
 @media screen and (max-width: 400px) {
