@@ -1,3 +1,5 @@
+gsap.registerPlugin(ScrollTrigger);
+
 function isDesktop() {
   return window.innerWidth > 1000;
 }
@@ -40,6 +42,69 @@ function desktopAnimations() {
   gsap.to(".navbar__container", {
     opacity: 1,
     delay: 2.6,
+  });
+
+  gsap.to(".project__intro", {
+    x: 0,
+    duration: 0.5,
+    opacity: 1,
+    scrollTrigger: {
+      trigger: ".project__intro",
+      start: "top 95%",
+    },
+  });
+
+  gsap.to(".project__links-left-1", {
+    x: 0,
+    scrollTrigger: {
+      trigger: ".project__links-left-1",
+      start: "top bottom",
+      end: "50% 50%",
+      scrub: 0.1,
+    },
+  });
+
+  gsap.to(".project__links-right-1", {
+    x: "50%",
+    scrollTrigger: {
+      trigger: ".project__links-right-1",
+      start: "top bottom",
+      end: "50% 50%",
+      scrub: 0.1,
+    },
+  });
+
+  gsap.to(".project__links-left-2", {
+    x: 0,
+    scrollTrigger: {
+      trigger: ".project__links-left-2",
+      start: "top bottom",
+      end: "50% 50%",
+      scrub: 0.1,
+      ease: "anticipate",
+    },
+  });
+
+  gsap.to(".project__links-right-2", {
+    x: "50%",
+    scrollTrigger: {
+      trigger: ".project__links-right-2",
+      start: "top bottom",
+      end: "50% 50%",
+      scrub: 0.1,
+    },
+  });
+
+  gsap.to(".graphicsChild", {
+    y: "0%",
+    opacity: 1,
+    scale: 1,
+    scrollTrigger: {
+      trigger: ".graphicsChild",
+      start: "top bottom",
+      end: "50% 90%",
+      scrub: 0.1,
+    },
   });
 }
 

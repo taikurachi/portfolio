@@ -4,7 +4,7 @@
 }
 
 .hero__content {
-  margin: -50px 10rem 4rem 10rem;
+  margin: 0 10% 0 10%;
   font-size: 8rem;
   display: flex;
   flex-direction: column;

@@ -1,5 +1,12 @@
 body {
   background: #ecf1dd;
+  overflow-x: hidden;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
 }
 
 .text__header {

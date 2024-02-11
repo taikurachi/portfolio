@@ -1,7 +1,7 @@
 .about {
   display: flex;
   justify-content: center;
-  margin: 10rem;
+  margin: 0% 10%;
 }
 .about__content {
   display: flex;
