@@ -7,6 +7,9 @@ function isDesktop() {
 function desktopAnimations() {
   const myText = new SplitType(".name");
 
+  gsap.to(".name", {
+    opacity: 1,
+  });
   gsap.to(".char", {
     y: 0,
     stagger: 0.05,
