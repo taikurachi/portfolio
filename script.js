@@ -56,63 +56,9 @@ function desktopAnimations() {
       start: "top 95%",
     },
   });
-
-  gsap.to(".project__links-left-1", {
-    x: 0,
-    scrollTrigger: {
-      trigger: ".project__links-left-1",
-      start: "top bottom",
-      end: "50% 50%",
-      scrub: 0.1,
-    },
-  });
-
-  gsap.to(".project__links-right-1", {
-    x: "50%",
-    scrollTrigger: {
-      trigger: ".project__links-right-1",
-      start: "top bottom",
-      end: "50% 50%",
-      scrub: 0.1,
-    },
-  });
-
-  gsap.to(".project__links-left-2", {
-    x: 0,
-    scrollTrigger: {
-      trigger: ".project__links-left-2",
-      start: "top bottom",
-      end: "50% 50%",
-      scrub: 0.1,
-      ease: "anticipate",
-    },
-  });
-
-  gsap.to(".project__links-right-2", {
-    x: "50%",
-    scrollTrigger: {
-      trigger: ".project__links-right-2",
-      start: "top bottom",
-      end: "50% 50%",
-      scrub: 0.1,
-    },
-  });
-
-  gsap.to(".graphicsChild", {
-    y: "0%",
-    opacity: 1,
-    scale: 1,
-    scrollTrigger: {
-      trigger: ".graphicsChild",
-      start: "top bottom",
-      end: "50% 90%",
-      scrub: 0.1,
-    },
-  });
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  console.log("is desktop");
   if (isDesktop()) {
     desktopAnimations();
   }
