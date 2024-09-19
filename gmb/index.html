@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GMB</title>
-    <link rel="stylesheet" href="../subpage.css" />
+    <title>GMB Fitness Projects</title>
+    <!-- <link rel="stylesheet" href="../subpage.css" /> -->
+    <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="gmb.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,156 +31,721 @@
       href="..//portfolioFavIcons/favicon-16x16.png"
     />
     <link rel="manifest" href="..//portfolioFavIcons/site.webmanifest" />
+    <script defer src="script.js"></script>
   </head>
   <body>
-    <nav class="navbar">
-      <navbar class="navbar__container">
-        <a href="https://taiseikurachi.xyz/#about" class="navbar__items links"
-          >about</a
-        >
-        <a href="https://taiseikurachi.xyz/#contact" class="navbar__items links"
-          >contacts</a
-        >
-        <a
-          href="https://taiseikurachi.xyz/#projects"
-          class="navbar__items links"
-          >projects</a
-        >
-      </navbar>
-    </nav>
-    <section class="content">
-      <section class="project__demo">
-        <a href="https://gmb.io/">
-          <div class="logo__container gmbLogoImg__container">
-            <img
-              src="..//images/gmb/gmbLogoCropped.svg"
-              alt="gmb logo"
-              class="projectImg"
-            />
-          </div>
-        </a>
-
-        <p class="project__description">
-          Projects I've completed as a Freelance Front-End Developer & Designer
-          for GMB Fitness.
-        </p>
-
-        <div class="project__details">
-          <div class="timeline__container">
-            <p>Timeline:</p>
-            <p>May 2023 - Present</p>
-          </div>
-          <div class="role__container">
-            <p>Role:</p>
-            <p>Front-End Designer, Developer</p>
-          </div>
-        </div>
-      </section>
-      <section class="projects__container">
-        <div class="project__text">
-          <h1 class="project__header">Pricing Table</h1>
-          <p class="project__description">
-            I was tasked with creating a new pricing table to sell GMB Programs.
-            Here's what I came up with.
-          </p>
-        </div>
-        <div class="project__display">
-          <h1 class="project__header">Before</h1>
-          <div class="projectImg__containerr">
-            <img
-              src="..//images/gmb/gmbPricingTableBefore.png"
-              alt="gmb pricing table before"
-              class="projectImg"
-            />
+    <header class="navbar">
+      <nav class="navbar__container">
+        <a href="../" class="navbar__items links">about</a>
+        <a href="../#contact" class="navbar__items links">contacts</a>
+        <a href="../#projects" class="navbar__items links">projects</a>
+      </nav>
+    </header>
+    <main class="projects padding-default section">
+      <h1 class="header-lg">
+        Projects I've worked on as a UX Engineer at
+        <strong class="gmb-gradient">GMB Fitness</strong>
+      </h1>
+      <div class="project__layout-grid">
+        <div class="layout-grid__left-col flex-1">
+          <video
+            class="desktop-img span2"
+            muted
+            preload
+            autoplay
+            loop
+            playsinline
+            src="../images/gmb/gmb2.mp4"
+            alt="video carousel prototype"
+          ></video>
+          <video
+            src="../images/gmb/gmb6.mp4"
+            class="desktop-img span2"
+            muted
+            preload
+            autoplay
+            loop
+            playsinline
+            alt="new pricing table design"
+          ></video>
+          <div class="layout-grid__img-group">
+            <div class="mobile-img__container">
+              <img
+                class="flex-1"
+                src="../images/gmb/gmb3.jpg"
+                alt="GMB new landing page mobile"
+              />
+            </div>
+            <div class="mobile-img__container">
+              <img
+                class="flex-1"
+                src="../images/gmb/gmb4.jpg"
+                alt="new mobile navigation"
+              />
+            </div>
           </div>
         </div>
-        <div class="project__display">
-          <h1 class="project__header">After</h1>
-          <div class="projectImg__container">
-            <img
-              src="..//images/gmb/gmbPricingTableFinal.png"
-              alt="gmb pricing table after"
-              class="projectImg"
-            />
-          </div>
-        </div>
-        <div class="project__actions">
-          <a href="https://gmb.io/e/#choose"
-            ><p class="viewButton viewLive">view live</p></a
-          >
-        </div>
-      </section>
-
-      <section class="projects__container">
-        <div class="project__text">
-          <h1 class="project__header">Video Autoplay</h1>
-          <div class="project__description">
-            I was tasked with brainstorming and implementing various ways to add
-            dynamic animations and interactivity to the GMB website. I thought
-            of adding a dynamic auto-scrolling desktop/phone image to improve
-            the user experience and engagement when scrolling through the list
-            of available programs.
-          </div>
-        </div>
-        <div class="project__display">
-          <h1 class="project__header">Before</h1>
-          <div class="projectImg__container">
-            <video
-              preload="auto"
-              autoplay="autoplay"
-              loop
-              muted
-              playsinline
-              src="..//images/gmb/desktopPhoneAutoplayBeforeFinal.mp4"
-              class="projectImg"
-            ></video>
-          </div>
-        </div>
-        <div class="project__display">
-          <h1 class="project__header">After</h1>
-          <div class="projectImg__container">
-            <video
-              preload="auto"
-              autoplay="autoplay"
-              loop
-              muted
-              playsinline
-              src="..//images/gmb/desktopPhoneAutoplayAfter.mp4"
-              class="projectImg"
-            ></video>
-          </div>
-        </div>
-      </section>
-
-      <section class="projects__container">
-        <div class="project__text">
-          <h1 class="project__header">Help Page Improvements</h1>
-          <p class="project__description">
-            I was tasked with improving the help page of GMB Fitness. I added a
-            dynamic background gradient in the header and emojis in each section
-            to match the GMB theme and improve the user experience and
-            efficiency.
-          </p>
-        </div>
-        <div class="projectImg__container">
+        <div class="layout-grid__right-col flex-1">
           <img
-            src="../images/gmb/helpscoutImg.png"
-            alt="helpsout page design image"
-            class="projectImg"
+            class="desktop-img span2"
+            src="../images/gmb/gmb.jpg"
+            alt="GMB new landing page"
           />
+          <video
+            src="../images/gmb/gmb8.mp4"
+            class="desktop-img span2"
+            muted
+            preload
+            autoplay
+            loop
+            playsinline
+            alt="new gmb landing page prototype"
+          ></video>
+          <video
+            src="../images/gmb/gmb11.mp4"
+            class="mobile-img-shrink"
+            muted
+            preload
+            autoplay
+            loop
+            playsinline
+            alt="new sales page template mobile"
+          ></video>
         </div>
-        <div class="project__actions">
-          <a href="https://help.gmb.io/"
-            ><p class="viewButton viewLive">view live</p></a
-          >
+      </div>
+      <div class="projects__info">
+        <div class="projects__info__container pastel-blue smooth-border flex-1">
+          <h3 class="projects__info__heading header-sm">My role</h3>
+          <div class="projects__info__roles">
+            <span class="role">UX design</span>
+            <span class="role">Interaction design</span>
+            <span class="role">User interviews</span>
+            <span class="role">Front-end development</span>
+            <span class="role">Prototyping</span>
+            <span class="role">User flows</span>
+          </div>
         </div>
+        <div
+          class="projects__info__container pastel-purple smooth-border flex-1"
+        >
+          <h3 class="projects__info__heading header-sm">My impact</h3>
+          <ul class="projects__info__impacts">
+            <li class="p-sm">
+              Drove user retention, retention, and conversion rates by over 10%
+            </li>
+            <li class="p-sm">Improved user experience and brand aesthetics</li>
+            <li class="p-sm">
+              Optimized old layout utility CSS classes, decreasing time for
+              content production
+            </li>
+          </ul>
+        </div>
+      </div>
+      <section class="background-section">
+        <h2 class="header-md">Background</h2>
+
+        <p class="p-md section-p">
+          GMB Fitness is a fitness company that focuses on helping people
+          improve their mobility, flexibility, and strength through bodyweight
+          exercises. Unlike traditional workout programs that focus on heavy
+          lifting or intense cardio, GMB emphasizes functional fitness, making
+          it ideal for individuals who want to move better, feel stronger, and
+          maintain an active lifestyle without using gym equipment.
+        </p>
+        <p class="p-md section-p">
+          I work as the <strong> primary designer and developer </strong> for
+          improving the GMB website and web application, collaborating with my
+          tech lead for project direction and new project ideas.
+        </p>
       </section>
 
-      <div class="next__btn">
-        <a href="https://taiseikurachi.xyz/colorz/"
-          ><div class="next__project"><p>COLORZ</p></div></a
+      <section class="timeline-section">
+        <h2 class="header-md">Timeline</h2>
+        <div class="timeline__content section-p">
+          <figure class="timeline__figure">
+            <div></div>
+            <div></div>
+            <div></div>
+          </figure>
+          <div class="timeline__boxes">
+            <div class="box pastel-pink">
+              <div class="box__title flex-center">
+                <img
+                  src="../images/gmb/website-icon.png"
+                  class="website-icon icon"
+                  alt="website icon"
+                />
+                <span>Landing page overhaul</span>
+              </div>
+              <p>August 2024 - Present</p>
+            </div>
+            <div class="box pastel-purple">
+              <div class="box__title flex-center">
+                <img
+                  src="../images/gmb/website-icon.png"
+                  class="website-icon icon"
+                  alt="website icon"
+                />
+                <span>Sales page template</span>
+              </div>
+              <p>June 2024 - July 2024</p>
+            </div>
+            <div class="box pastel-green">
+              <div class="box__title flex-start">
+                <img
+                  src="../images/gmb/mobile-navbar.png"
+                  class="mobile-nav-icon icon"
+                  alt="mobile nav icon"
+                />
+                <span>Mobile navigation</span>
+              </div>
+              <p>December 2023 - February 2024</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section class="project padding-default spacing-default-lg">
+      <div class="project-display__container spacing-default">
+        <div class="project__tag pastel-pink">
+          <img
+            src="../images/gmb/website-icon.png"
+            alt="website icon"
+            class="icon"
+          />
+          <span class="p-sm">Landing page overhaul</span>
+        </div>
+        <h2 class="project__title header-lg">
+          Redesigning the landing page to emphasize GMB’s market appeal to help
+          increase customer retention and conversion rate.
+        </h2>
+        <p class="p-sm">
+          *This is an ongoing project that I am still working on with GMB
+          Fitness.
+        </p>
+        <div class="project__layout-grid">
+          <div class="layout-grid__left-col flex-1">
+            <img
+              loading="lazy"
+              src="../images/gmb/gmb.jpg"
+              alt="new gmb landing page"
+            />
+            <video
+              muted
+              preload
+              autoplay
+              loop
+              playsinline
+              src="../images/gmb/gmb2.mp4"
+              alt="video carousel prototype"
+            ></video>
+          </div>
+          <div class="layout-grid__right-col flex-1">
+            <video
+              src="../images/gmb/gmb8.mp4"
+              muted
+              preload
+              autoplay
+              loop
+              playsinline
+              alt="new gmb landing page prototype"
+            ></video>
+            <img
+              loading="lazy"
+              src="../images/gmb/gmb15.jpg"
+              alt="gmb reboot video preview"
+            />
+          </div>
+        </div>
+        <div class="project__actions">
+          <a
+            href="https://www.figma.com/proto/8hsFURI7riP9ylfKyvdWSd/gmb-site-redesign?page-id=0%3A1&node-id=2-7&node-type=frame&viewport=321%2C316%2C0.18&t=toWlbEuEl8MIJYws-1&scaling=scale-down-width&content-scaling=fixed"
+            class="btn p-sm pastel-purple"
+            >View prototype</a
+          >
+          <button class="btn p-sm pastel-pink design-btn">
+            Show design process
+          </button>
+        </div>
+      </div>
+      <div class="design-process-content spacing-default-lg">
+        <section class="spacing-default">
+          <h3 class="header-lg">Competitive analysis</h3>
+          <div class="project__layout-grid flex-container-halves">
+            <div class="layout-grid__left-col flex-2">
+              <img
+                src="../images/gmb/stripe-desktop.jpg"
+                alt="stripe desktop image"
+              />
+              <video
+                src="../images/gmb/ramp-carousel.mp4"
+                muted
+                preload
+                autoplay
+                loop
+                playsinline
+                alt="ramp carousel demo"
+              ></video>
+            </div>
+            <div class="layout-grid__right-col flex-1">
+              <video
+                src="../images/gmb/stripe-animation.mp4"
+                muted
+                preload
+                autoplay
+                loop
+                playsinline
+                alt="stripe animation"
+              ></video>
+            </div>
+          </div>
+          <p class="p-sm">
+            I knew I wanted to incorporate gradients into my redesign. One
+            company that utilizes gradients effectively is Stripe. After
+            exploring their website, I admired their clean UI and how they
+            seamlessly integrate gradients throughout their content. Rather than
+            using a gradient overlay on an image, as GMB is currently doing, I
+            decided it would be more visually appealing to apply the gradient
+            over text or as a background element, avoiding a cluttered look. I
+            also drew inspiration from Ramp’s video carousel layout, which I saw
+            as a great fit for GMB’s design. Overall, GMB Fitness’s landing page
+            lacked some aesthetic design elements, which I aimed to address in
+            my redesign. I also wanted to focus on GMB’s brand appeal and what
+            makes it different from other fitness programs.
+          </p>
+        </section>
+        <section class="users spacing-default">
+          <h3 class="header-lg">User Research/Personas</h3>
+          <div class="users__container flex-container-halves">
+            <div class="users__male users-box pastel-blue flex-1">
+              <div class="users__details">
+                <img
+                  src="../images/gmb/male-icon.svg"
+                  alt="male icon"
+                  class="user-icon"
+                />
+                <div class="users__details__specfics">
+                  <p class="p-lg"><strong>Trent</strong></p>
+                  <p class="light-font p-md">35-45 years old</p>
+                </div>
+              </div>
+
+              <ul class="users__description">
+                <li class="p-sm">involved in cross-fit</li>
+                <li class="p-sm">feeling some of injuries</li>
+                <li class="p-sm">slowed down metabolism</li>
+                <li class="p-sm">recovering cross-fitter</li>
+              </ul>
+            </div>
+            <div class="users__female users-box pastel-pink flex-1">
+              <div class="users__details">
+                <img
+                  src="../images/gmb/female-icon.svg"
+                  alt="female icon"
+                  class="user-icon"
+                />
+                <div class="users__details__specfics">
+                  <p class="p-lg"><strong>Carol</strong></p>
+                  <p class="light-font p-md">55-65 years old</p>
+                </div>
+              </div>
+
+              <ul class="users__description">
+                <li class="p-sm">involved in hiking/gardening</li>
+                <li class="p-sm">struggling to fully squat</li>
+                <li class="p-sm">have non-athletic responsibilities</li>
+                <li class="p-sm">wants supplemental program</li>
+              </ul>
+            </div>
+          </div>
+          <p class="p-sm">
+            Through user research and personas, we identified that many of our
+            users are former athletes or active individuals who want to move
+            again but may feel held back by aches and pains. GMB is designed to
+            be that friendly, approachable guide to help them start moving
+            again, without the pressure or intensity of a complete fitness
+            overhaul. To clearly differentiate GMB from traditional fitness
+            programs, I strategically planned to place a dedicated section right
+            beneath the hero banner that explains how GMB programs work.
+          </p>
+          <p class="p-sm">
+            I planned to include a section that highlights what sets GMB apart,
+            allowing users to quickly grasp the value proposition. I planned to
+            replace the current thin headings with clear, descriptive ones that
+            guide users seamlessly through the content, making it easier for
+            them to quickly grasp what GMB offers. Additionally, I wanted
+            emphasized GMB’s global reach, showcasing the number of clients and
+            countries we’ve expanded to. This not only builds trust but also
+            reinforces GMB’s credibility by demonstrating that it’s a proven
+            product enjoyed by many across the world.
+          </p>
+        </section>
+        <section class="spacing-default">
+          <h3 class="header-lg">User flows</h3>
+          <img src="" alt="user flow image" />
+          <p class="p-sm">
+            Users should be able to understand what GMB offers within the first
+            30 seconds of landing on the page. After grasping the core value,
+            they can explore client success stories, showcasing real people who
+            have benefited from GMB's programs, which helps build trust. From
+            there, users can either browse the ‘Best Tutorials and Guides’ or
+            visit the ‘Elements’ page for pricing and detailed information about
+            the programs.
+          </p>
+          <p class="p-sm">
+            An alternative flow allows users to learn more about GMB’s offerings
+            and what sets it apart, followed by testing the 20-Minute Reboot
+            video. After a set amount of time, the video prompts users to sign
+            up with their email to continue watching, encouraging email capture
+            while offering a preview of the program.
+          </p>
+        </section>
+        <section class="spacing-default">
+          <h3 class="header-lg">Prototyping/Wireframing</h3>
+          <div class="project__layout-grid flex-container-halves">
+            <div class="image-container">
+              <img src="../images/gmb/gmb13.jpg" alt="gmb figma component" />
+            </div>
+            <div class="image-container">
+              <img src="../images/gmb/gmb14.jpg" alt="gmb figma component" />
+            </div>
+            <div class="image-container">
+              <img src="../images/gmb/gmb15.jpg" alt="gmb figma component" />
+            </div>
+          </div>
+          <p class="p-sm">
+            I aimed to build trust in our science-based approach by giving users
+            immediate value upfront. That’s why I included a snippet of our free
+            20-minute bodyweight reboot video directly on the page. Users can
+            watch the first five minutes to experience the quality of our
+            content firsthand before being prompted to input their email to
+            access the full video. This approach not only provides tangible
+            value but also encourages users to engage further by signing up,
+            creating a natural progression toward conversion. In the old design,
+            users would have to sign up with their email before they received
+            the free video, which could have deterred people from the start.
+          </p>
+          <p class="p-sm">
+            In my redesign, I focused on improving the presentation of our best
+            guides and tutorials. While the original design included these
+            resources, it lacked an inviting and visually appealing layout,
+            which made it harder for users to engage with the content.
+          </p>
+          <p class="p-sm">
+            In the new design, I prioritized creating a more welcoming and
+            visually stimulating experience. By utilizing simple icons, adding
+            clear headings, and incorporating inviting imagery and visuals, I
+            made the guides more accessible and engaging. This redesign allows
+            users to explore the tutorials more easily, ultimately creating
+            trust in the quality of our offerings and encouraging deeper
+            engagement.
+          </p>
+          <p class="p-sm">
+            The improved design helps users feel more comfortable and
+            interested, contributing to higher retention and interaction rates
+            with our content, and positioning them closer to making a purchase.
+          </p>
+        </section>
+        <section class="spacing-default">
+          <h3 class="header-lg">Next steps</h3>
+          <p class="p-sm">
+            After performing some usability tests with my prototype, I had some
+            design feedback that included:
+          </p>
+          <ul class="p-sm dark-font">
+            <li>
+              Adding some simple animations to make the page more engaging
+            </li>
+            <li>
+              Provide a more memorable graphic for “How GMB programs work”
+            </li>
+            <li>Being careful to include specific metrics</li>
+            <li>
+              Color code the icons for the “best guides & tutorials”. For
+              example, make the background of “mobility” content pink
+            </li>
+            <li>
+              Change some of the wording of the content to be more professional
+            </li>
+          </ul>
+          <p class="p-sm">
+            Based on the feedback, I made some adjustments to the prototype and
+            presented it to the tech lead for approval. He approved the design,
+            so I will now move forward with the development. Instead of
+            migrating everything to the new design all at once, which would be a
+            significant brand shift, I plan to implement the improvements
+            gradually, updating the website component by component. I will use
+            PHP, HTML, SCSS, and JavaScript to implement these designs.
+          </p>
+        </section>
+      </div>
+    </section>
+
+    <section class="project padding-default spacing-default-lg">
+      <div class="project-display__container spacing-default">
+        <div class="project__tag pastel-purple">
+          <img
+            src="../images/gmb/website-icon.png"
+            alt="website icon"
+            class="icon"
+            loading="lazy"
+          />
+          <span class="p-sm">Sales page template</span>
+        </div>
+        <h2 class="project__title header-lg">
+          Creating an engaging sales page template to increase user retention
+          and conversion rates.
+        </h2>
+        <div class="project__layout-grid">
+          <div class="video-container">
+            <video
+              src="../images/gmb/gmb10.mp4"
+              muted
+              preload
+              autoplay
+              loop
+              playsinline
+              alt="new sales page template"
+            ></video>
+            <video
+              src="../images/gmb/gmb11.mp4"
+              muted
+              preload
+              autoplay
+              loop
+              playsinline
+              alt="new sales page template mobile"
+              class="mobile-asset-on-desktop"
+            ></video>
+          </div>
+        </div>
+        <div class="project__actions">
+          <button class="btn p-sm pastel-pink design-btn">
+            Show design process
+          </button>
+        </div>
+      </div>
+      <div class="design-process-content spacing-default-lg">
+        <section class="spacing-default">
+          <h3 class="header-lg">Prototyping</h3>
+          <div class="project__layout-grid flex-container-halves">
+            <div class="layout-grid__left-col flex-1">
+              <div class="image-container">
+                <img
+                  loading="lazy"
+                  src="../images/gmb/sales-prototype1.jpg"
+                  alt="sales prototype image"
+                />
+              </div>
+              <div class="image-container">
+                <img
+                  loading="lazy"
+                  src="../images/gmb/sales-prototype2.jpg"
+                  alt="sales prototype image"
+                />
+              </div>
+            </div>
+            <div class="layout-grid__right-col flex-1">
+              <div class="image-container">
+                <img
+                  loading="lazy"
+                  src="../images/gmb/sales-prototype3.jpg"
+                  alt="sales prototype image"
+                />
+              </div>
+            </div>
+          </div>
+          <p class="p-sm">
+            These are the three designs I prototyped. I knew I wanted to execute
+            the two-column layout and have the hero image on the right,
+            therefore, I chose to start off with prototypes instead of
+            wireframing. Each design incorporates a gradient in some way. When I
+            presented the prototypes to the tech lead and the CEO, they favored
+            the third design for its simplicity. Since this was a design for a
+            sales page template, a bold or loud layout could become repetitive
+            if used too often. By keeping it clean and simple, we reduced the
+            risk of the template feeling redundant. After receiving their
+            approval, I moved on to the development phase using PHP, HTML, SCSS,
+            and JavaScript.
+          </p>
+        </section>
+      </div>
+    </section>
+    <section class="project padding-default spacing-default-lg">
+      <div class="project-display__container spacing-default">
+        <div class="project__tag pastel-green">
+          <img
+            src="../images/gmb/mobile-navbar.png"
+            alt="mobile navigation icon"
+            class="icon"
+            loading="lazy"
+          />
+          <span class="p-sm">Mobile navigation</span>
+        </div>
+        <h2 class="project__title header-lg">
+          Engineering a new mobile navigation bar to improve user experience and
+          guide users more effectively toward making purchases.
+        </h2>
+        <div class="project__layout-grid flex-container-halves">
+          <div class="image-container">
+            <img src="../images/gmb/gmb4.jpg" alt="new mobile nav" />
+          </div>
+          <div class="image-container">
+            <img
+              src="../images/gmb/gmb12.jpg"
+              loading="lazy"
+              alt="new mobile nav landscape"
+            />
+          </div>
+        </div>
+        <div class="project__actions">
+          <a href="https://gmb.io/" target="_blank" class="btn p-sm pastel-pink"
+            >View live</a
+          >
+          <button class="btn p-sm pastel-purple design-btn">
+            Show design process
+          </button>
+        </div>
+      </div>
+      <div class="design-process-content spacing-default-lg">
+        <section class="spacing-default">
+          <h3 class="header-lg">Competitive analysis</h3>
+          <div class="project__layout-grid flex-container-halves">
+            <div class="layout-grid__left-col flex-1">
+              <div class="image-container">
+                <img
+                  src="../images/gmb/nav-inspo3.jpg"
+                  alt="nav inspiration image"
+                  loading="lazy"
+                />
+              </div>
+              <div class="image-container">
+                <img
+                  src="../images/gmb/nav-inspo4.jpg"
+                  alt="nav inspiration image"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="layout-grid__right-col flex-1">
+              <div class="image-container">
+                <img
+                  src="../images/gmb/nav-inspo1.png"
+                  alt="nav inspiration image"
+                  loading="lazy"
+                />
+              </div>
+              <div class="image-container">
+                <img
+                  src="../images/gmb/nav-inspo2.jpg"
+                  alt="nav inspiration image"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+          <p class="p-sm">
+            The CEO and tech lead asked me to use these designs as inspiration
+            for the new mobile navigation. They emphasized the importance of
+            highlighting call-to-action elements and creating a cleaner, more
+            organized format for users to navigate the GMB website. With an
+            increasing number of mobile users visiting the site, it became
+            essential to design a visually appealing and highly navigable
+            dropdown menu.
+          </p>
+        </section>
+        <section class="spacing-default">
+          <h3 class="header-lg">Wireframing/Prototyping</h3>
+          <div class="project__layout-grid flex-container-halves">
+            <div class="image-container">
+              <img
+                src="../images/gmb/gmb4.jpg"
+                alt="mobile navigation design"
+                loading="lazy"
+              />
+            </div>
+            <div class="image-container">
+              <img
+                src="../images/gmb/gmb5.jpg"
+                alt="mobile navigation design"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <p class="p-sm">
+            I created these two designs. The first included the existing
+            background color while introducing the new layout. The second design
+            incorporated CTA icons directing users to GMB programs, along with a
+            red 'Save 40%' banner to prompt clicks on the Elements icon. Both
+            layouts improved navigation and enhanced the brand’s
+            professionalism. The CEO and tech lead preferred the second design,
+            so I proceeded with developing the mobile navigation using HTML,
+            SCSS, and JavaScript.
+          </p>
+        </section>
+      </div>
+    </section>
+
+    <section class="padding-default spacing-default-lg">
+      <div class="project-display__container spacing-default">
+        <div class="project__tag pastel-green">
+          <img
+            src="../images/gmb/mobile-navbar.png"
+            alt="mobile navigation icon"
+            class="icon"
+          />
+          <span class="p-sm">Other small projects</span>
+        </div>
+        <!-- <h2 class="project__title header-lg">
+          Right-arrow SCSS pseudo class to help customers imagine their user
+          flow
+        </h2>
+        <div class="project__layout-grid">
+          <video src=""></video>
+          <video src=""></video>
+          <video src=""></video>
+          <video src=""></video>
+        </div> -->
+        <h2 class="project__title header-lg">
+          Creating a new pricing table to increase coversion rates.
+        </h2>
+        <div class="project__layout-grid flex-container-halves">
+          <div class="video-container">
+            <video
+              src="../images/gmb/gmb6.mp4"
+              muted
+              preload
+              autoplay
+              loop
+              playsinline
+              alt="new pricing table desktop"
+              class=""
+            ></video>
+            <video
+              src="../images/gmb/gmb9.mp4"
+              muted
+              preload
+              autoplay
+              loop
+              playsinline
+              alt="new pricing table mobile"
+              class="mobile-asset-on-desktop"
+            ></video>
+          </div>
+        </div>
+        <a
+          href="https://gmb.io/e/#choose"
+          target="_blank"
+          class="btn pastel-pink p-sm"
+          >View live</a
         >
       </div>
     </section>
+    <div class="other-projects">
+      <a href="../#projects" class="btn p-md pastel-blue"
+        >Check out other projects</a
+      >
+    </div>
   </body>
 </html>

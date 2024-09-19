@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Taisei's Portfolio</title>
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -37,195 +38,190 @@
   </head>
   <body>
     <!-- NAVBAR -->
-    <nav class="navbar">
-      <navbar class="navbar__container">
+    <header class="navbar">
+      <nav class="navbar__container">
         <a href="#about" class="navbar__items links">about</a>
         <a href="#projects" class="navbar__items links">projects</a>
         <a href="#contact" class="navbar__items links">contacts</a>
-      </navbar>
-    </nav>
-
-    <!-- CONTENT -->
-    <section class="content">
-      <!-- HERO  -->
-      <main class="hero">
-        <div class="hero__content">
-          <div class="topRow">
-            <p class="hi">Hi</p>
-            <p class="name">I'm Taisei Kurachi</p>
-          </div>
-          <div class="horizontalLine"></div>
-          <div class="bottomRow">
-            <p class="jobTitle">Designer & Developer</p>
-            <p class="location">Based in New York City</p>
-          </div>
+      </nav>
+    </header>
+    <!-- HERO SECTION -->
+    <main class="hero padding-default flex-container flex-center">
+      <div class="hero__text-content flex-column">
+        <p class="hero__greeting header-xxl">Hello.</p>
+        <h1 class="hero__title p-lg reset-font">
+          I’m <strong>Taisei Kurachi</strong>, I thrive on creating simple, but
+          effective modern looking designs and applications.
+        </h1>
+        <div class="hero__education p-md">
+          <p class="light-font">
+            Major: Integrated Design & Media at
+            <strong class="nyu-purple">NYU</strong>
+          </p>
+          <p class="light-font">
+            Minors: Computer Science & Web Programming & Applications
+          </p>
         </div>
-      </main>
+        <p class="p-md">
+          Currently working as a <strong>UX Engineer</strong> at
+          <strong class="gmb-gradient">GMB Fitness</strong>.
+        </p>
+      </div>
+      <div class="hero__image-content">
+        <img
+          class="gray-border smooth-border shadow-default"
+          src="images/home/profile.jpg"
+          alt="taisei profile image"
+        />
+      </div>
+    </main>
 
-      <!-- ABOUT -->
-      <section class="about" id="about">
-        <div class="about__content">
-          <div class="profileImg__container">
-            <div class="profileImg__crop">
-              <img
-                loading="lazy"
-                class="profileImg"
-                src="images/landingPageImages/taiseiProfile.JPG"
-                alt="image of Taisei"
-              />
+    <!-- PROFESSIONAL EXPERIENCE SECTION -->
+    <section class="experience padding-default" id="projects">
+      <h2 class="header-xl">Professional Experience</h2>
+      <div class="experience__content flex-container">
+        <a href="gmb/" class="flex-1">
+          <article class="experience__card shadow-default flex-1 smooth-border">
+            <div class="card-overflow-border">
+              <div class="card-display smooth-border pastel-pink">
+                <img
+                  src="./images/home/gmb.png"
+                  class="card-img-desktop gmb-asset1"
+                  alt="new GMB landing page design"
+                />
+                <img
+                  src="./images/home/gmb2.jpg"
+                  class="card-img-desktop gmb-asset2"
+                  alt="video carousel design"
+                />
+                <img
+                  src="./images/home/gmb3.jpg"
+                  alt="mobile gmb landing page design"
+                  class="card-img-mobile gmb-asset3"
+                />
+              </div>
+              <div class="card-description">
+                <div class="card__text-content">
+                  <p class="p-md job-company"><strong>GMB Fitness</strong></p>
+                  <p class="p-sm light-color job-title">UX Engineer</p>
+                  <p class="p-sm job-description">
+                    Engineered UI Components across GMB Website
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="verticalLine"></div>
-          <div class="aboutText__container">
-            <h1 class="text__header mobileText__header aboutText__header">
-              About me
-            </h1>
-            <div class="about__description">
-              I thrive on creating simple, but effective modern looking designs
-              and applications.
+          </article>
+        </a>
+        <a href="consulfi/" class="flex-1">
+          <article class="experience__card shadow-default flex-1 smooth-border">
+            <div class="card-overflow-border">
+              <div class="card-display smooth-border pastel-blue">
+                <img
+                  src="./images/home/stashIt.png"
+                  class="card-img-desktop stashIt-asset1"
+                  alt="new GMB landing page design"
+                />
+                <img
+                  src="./images/home/stashIt2.png"
+                  class="card-img-desktop stashIt-asset2"
+                  alt="stashIt UI design"
+                />
+                <img
+                  src="./images/home/stashIt3.jpg"
+                  alt="stash it landing page design"
+                  class="card-img-mobile stashIt-asset3"
+                />
+              </div>
+              <div class="card-description">
+                <div class="card__text-content">
+                  <p class="p-md job-company"><strong>Consulfi</strong></p>
+                  <p class="p-sm light-color job-title">
+                    Web Developer & Designer
+                  </p>
+                  <p class="p-sm job-description">
+                    Designed & developed custom websites for clients
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </section>
+          </article>
+        </a>
+        <a href="freelance/" class="flex-1">
+          <article class="experience__card shadow-default flex-1 smooth-border">
+            <div class="card-overflow-border">
+              <div
+                class="card-display smooth-border pastel-purple graphics-display"
+              >
+                <div class="graphics-display__left-col flex-column">
+                  <div class="graphic-img__container">
+                    <img
+                      class="graphic-img graphic-graduates"
+                      src="./images/home/freelance.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="graphic-img__container">
+                    <img
+                      class="graphic-img graphic-movember"
+                      src="./images/home/freelance2.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="graphic-img__container">
+                    <img
+                      class="graphic-img graphic"
+                      src="./images/home/freelance6.jpg"
+                      alt=""
+                    />
+                  </div>
+                </div>
 
-      <!-- PROJECTS -->
-      <section class="projects" id="projects">
-        <div class="project__content">
-          <h1 class="text__header mobileText__header project__intro">
-            Here are some of my projects
-          </h1>
+                <div class="graphics-display__right-col flex-column">
+                  <div class="graphic-img__container">
+                    <img
+                      class="graphic-img graphic"
+                      src="./images/home/freelance3.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="graphic-img__container">
+                    <img
+                      class="graphic-img graphic"
+                      src="./images/home/freelance4.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="graphic-img__container">
+                    <img
+                      class="graphic-img graphic"
+                      src="./images/home/freelance5.jpg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card-description">
+                <div class="card__text-content">
+                  <p class="p-md job-company"><strong>Freelance</strong></p>
+                  <p class="p-sm light-color job-title">Graphic Designer</p>
+                  <p class="p-sm job-description">
+                    Designed custom sports graphics for clients
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </a>
+      </div>
+    </section>
 
-          <div class="project__container">
-            <a href="stashIt/" class="project__links project__links-left-1"
-              ><div class="project__item stashIt">
-                <div class="project__details">
-                  <div class="project__text">
-                    <p class="project__title">WEBSITE</p>
-                    <p class="project__name">STASH IT</p>
-                  </div>
-                  <div class="projectImg__container">
-                    <img
-                      loading="lazy"
-                      src="images/landingPageImages/stashIt.png"
-                      class="project__img"
-                      alt="image of StashIt website"
-                    />
-                  </div>
-                </div>
-              </div>
-            </a>
-            <a href="gmb/" class="project__links project__links-right-1">
-              <div class="project__item gmb">
-                <div class="project__details">
-                  <div class="project__text">
-                    <p class="project__title">FREELANCE</p>
-                    <p class="project__name">GMB</p>
-                  </div>
-                  <div class="projectImg__container">
-                    <img
-                      loading="lazy"
-                      src="images/landingPageImages/gmb.png"
-                      class="project__img"
-                      alt="image of GMB pricing table"
-                    />
-                  </div>
-                </div>
-              </div>
-            </a>
-            <a href="colorz/" class="project__links project__links-left-2">
-              <div class="project__item colorz">
-                <div class="project__details">
-                  <div class="project__text">
-                    <p class="project__title">GAME</p>
-                    <p class="project__name">COLORZ</p>
-                  </div>
-                  <div class="projectImg__container">
-                    <img
-                      loading="lazy"
-                      src="images/landingPageImages/colorz.png"
-                      class="project__img"
-                      alt="image of colorz typing game"
-                    />
-                  </div>
-                </div>
-              </div>
-            </a>
-            <a href="portfolio/" class="project__links project__links-right-2">
-              <div class="project__item portfolio">
-                <div class="project__details">
-                  <div class="project__text">
-                    <p class="project__title">WEBSITE</p>
-                    <p class="project__name">PORTFOLIO</p>
-                  </div>
-                  <div class="projectImg__container">
-                    <img
-                      loading="lazy"
-                      src="images/landingPageImages/portfolio.png"
-                      class="project__img"
-                      alt="image of portfolio website"
-                    />
-                  </div>
-                </div>
-              </div>
-            </a>
-            <a href="graphics/" class="project__links graphicsChild">
-              <div class="project__item graphics">
-                <div class="project__details graphics__details">
-                  <div class="project__text graphics__text">
-                    <p class="project__title">GRAPHIC DESIGN</p>
-                    <p class="project__name">SPORTS DESIGN</p>
-                  </div>
-                  <div class="projectImg__background">
-                    <div class="graphicsImg__container">
-                      <img
-                        loading="lazy"
-                        src="images/landingPageImages/movember.png"
-                        class="graphics__img"
-                        alt="movember graphic"
-                      />
-                      <img
-                        loading="lazy"
-                        src="images/landingPageImages/noahKrakCommit-min.jpg"
-                        class="graphics__img"
-                        alt="jwu wrestling commitment graphic"
-                      />
-                      <img
-                        loading="lazy"
-                        src="images/landingPageImages/crew-geyer-min.png"
-                        class="graphics__img"
-                        alt="nyu wrestling graphic"
-                      />
-                      <img
-                        loading="lazy"
-                        src="images/landingPageImages/namePlates-min.png"
-                        class="graphics__img namePlatesImg"
-                        alt="locker room name plate design"
-                      />
-                      <img
-                        loading="lazy"
-                        src="images/landingPageImages/nealeCommit.jpg"
-                        class="graphics__img"
-                        alt="nyu wrestling commitment graphic"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <!-- CONTACT -->
-      <section class="contact" id="contact">
-        <div class="contact__container">
-          <h1
-            class="text__header contact__header mobileText__header underlined__header"
-          >
-            Contact me
-          </h1>
+    <!-- CONTACT SECTION -->
+    <section class="contact padding-default" id="contact">
+      <div class="contact__content flex">
+        <div class="content__left-col">
+          <h2 class="header-xl">Contact me</h2>
           <form
-            class="contact__content"
+            class="contact__form"
             action="https://api.web3forms.com/submit"
             method="POST"
           >
@@ -234,83 +230,82 @@
               name="access_key"
               value="e433e875-5f1c-42f5-b19e-761bb28176e2"
             />
-            <div class="contact__col contactFlexItem">
-              <div class="contact__box">
-                <div class="contact__details">
-                  <div class="contact__name">
-                    <label for="name">name:</label>
-                    <input
-                      type="text"
-                      class="contact__info"
-                      name="name"
-                      required
-                    />
-                  </div>
-                  <div class="contact__email">
-                    <label for="email">email:</label>
-                    <input
-                      type="text"
-                      class="contact__info"
-                      name="email"
-                      required
-                    />
-                  </div>
-                  <div class="contact__message">
-                    <label for="message">message:</label>
-                    <textarea name="message" class="messageBox"></textarea>
-                  </div>
-                  <button class="submit__btn" type="submit">submit</button>
-                </div>
+            <div class="contact__details flex-column">
+              <div class="contact__name">
+                <label class="p-md" for="name">Name:</label>
+                <input type="text" class="contact__info" name="name" required />
               </div>
-            </div>
-            <div class="links__col contactFlexItem">
-              <div class="spotify__container">
-                <div class="spotify__content">
-                  <div class="spotifyImg__container">
-                    <a
-                      href="https://open.spotify.com/search/seek%20and%20destroy"
-                      ><img
-                        loading="lazy"
-                        src="images/landingPageImages/spotify.png"
-                        alt="spotify image"
-                        class="spotify__img"
-                    /></a>
-                  </div>
-                  <div class="spotifyText__container">
-                    <p class="songDescription">Last played song</p>
-                    <p class="songTitle">Seek & Destroy by SZA</p>
-                  </div>
-                </div>
+              <div class="contact__email">
+                <label class="p-md" for="email">Email:</label>
+                <input
+                  type="text"
+                  class="contact__info"
+                  name="email"
+                  required
+                />
               </div>
-              <div class="links__content">
-                <h1 class="text__header mobileText__header underlined__header">
-                  Links
-                </h1>
-                <div class="links__items">
-                  <a
-                    href="https://github.com/taikurachi?tab=repositories"
-                    class="links"
-                    >Github</a
-                  >
-                  <a
-                    href="https://www.linkedin.com/in/taiseikurachi/"
-                    class="links"
-                    >LinkedIn</a
-                  >
-                  <a
-                    href="https://drive.google.com/file/d/1KgLcVE8tFyjCuPDHH6NQYqr7rt44saW4/view?usp=sharing"
-                    class="links"
-                    >Resume</a
-                  >
-                  <a href="mailto:tk2958@nyu.edu?subject=&body=" class="links"
-                    >Email</a
-                  >
-                </div>
+              <div class="contact__message">
+                <label class="p-md" for="message">Message:</label>
+                <textarea name="message" class="messageBox"></textarea>
               </div>
+              <button class="btn pastel-purple smooth-border" type="submit">
+                submit
+              </button>
             </div>
           </form>
         </div>
-      </section>
+
+        <div class="content__right-col">
+          <div class="spotify__container pastel-blue">
+            <div class="spotify__content flex-center">
+              <a href="https://open.spotify.com/search/seek%20and%20destroy"
+                ><img
+                  loading="lazy"
+                  src="images/home/spotify.png"
+                  alt="spotify image"
+                  class="spotify-img"
+              /></a>
+              <div class="spotify__text-content flex-column">
+                <p class="spotify__description light-font">Last played song</p>
+                <p class="spotify__song p-sm">Seek & Destroy by SZA</p>
+              </div>
+            </div>
+          </div>
+          <div class="links__content">
+            <h1 class="header-xl">Links</h1>
+            <ul
+              class="links__items flex-column list-style-none list-margin-none"
+            >
+              <li>
+                <a
+                  href="https://github.com/taikurachi?tab=repositories"
+                  class="links"
+                  >Github</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/taiseikurachi/"
+                  class="links"
+                  >LinkedIn</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://drive.google.com/file/d/1KgLcVE8tFyjCuPDHH6NQYqr7rt44saW4/view?usp=sharing"
+                  class="links"
+                  >Resume</a
+                >
+              </li>
+              <li>
+                <a href="mailto:tk2958@nyu.edu?subject=&body=" class="links"
+                  >Email</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
   </body>
 </html>

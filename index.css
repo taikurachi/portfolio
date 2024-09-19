@@ -1,0 +1,268 @@
+.hero__image-content img {
+  width: clamp(300px, 20vw, 600px);
+}
+
+.experience__content {
+  margin-top: 30px;
+}
+
+.experience__card {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-display {
+  height: 370px;
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+.card-description {
+  transition: all 0.5s ease;
+  background: var(--bg-color);
+}
+
+.card-overflow-border {
+  overflow: hidden;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.card__text-content::after {
+  content: "View projects →";
+  position: absolute;
+  bottom: -10px;
+  left: 20px;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+/* ALL ANIMATION CHANGES FROM CARD HOVER */
+.experience__card:hover {
+  .card-description {
+    transform: translateY(-30px);
+  }
+
+  .card-img-desktop {
+    transform: translateY(20px);
+  }
+
+  .card-display {
+    transform: translateY(-30px);
+  }
+  .card__text-content::after {
+    opacity: 1;
+  }
+  .graphics-display__left-col {
+    transform: translateY(20px);
+  }
+  .graphics-display__right-col {
+    transform: translateY(10px);
+  }
+  .card-img-mobile {
+    transform: translateY(20px);
+  }
+}
+.card__text-content {
+  padding: 20px;
+}
+.job-title {
+  margin-top: 5px;
+}
+.job-description {
+  margin-top: 16px;
+}
+
+.card-img-desktop {
+  width: clamp(160px, 80%, 500px);
+  transition: all 0.5s ease;
+  border-radius: 10px 0px;
+}
+.card-img-mobile {
+  width: clamp(180px, 20vw, 200px);
+  display: none;
+  position: absolute;
+  border-radius: 10px 0px;
+  transition: all 0.5s ease;
+}
+.gmb-asset3 {
+  bottom: -150px;
+  right: -2px;
+}
+.stashIt-asset3 {
+  bottom: -90px;
+  right: -2px;
+}
+.stashIt-asset2 {
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  width: 240px;
+  border-radius: 10 0px;
+}
+.gmb-asset1 {
+  transform: translateY(-2px);
+}
+.gmb-asset2 {
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+  width: 70%;
+}
+
+.job-details {
+  color: black;
+  display: none;
+}
+
+.graphic-img__container {
+  width: 80%;
+
+  min-width: 140px;
+}
+
+.graphic-img {
+  width: 100%;
+}
+
+.graphics-display {
+  display: flex;
+  gap: 2rem;
+}
+.graphics-display__left-col {
+  transition: all 0.5s ease;
+  flex: 1;
+}
+.graphics-display__right-col {
+  transition: all 0.5s ease;
+  flex: 1;
+}
+
+.contact__content {
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+}
+.contact__form {
+  padding: 40px;
+  margin-top: 30px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.contact__details {
+  gap: 2rem;
+}
+
+.contact__details input,
+.contact__details textarea {
+  display: block;
+  width: 100%;
+  border-radius: 4px;
+  background: none;
+  border: 1px solid black;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.contact__details textarea {
+  height: 200px;
+}
+
+.contact__form button {
+  align-self: flex-end;
+  width: 80px;
+}
+
+.spotify-img {
+  width: 50px;
+}
+
+.spotify__container {
+  border-radius: 40px;
+}
+.spotify__content {
+  gap: 2rem;
+  padding: 16px 40px;
+}
+
+.spotify__text-content {
+  gap: 0.4rem;
+}
+.spotify__song {
+  font-weight: 500;
+}
+
+.links__content h1 {
+  margin-top: 20px;
+}
+.links__items {
+  margin-top: 16px;
+}
+.links__items li a {
+  font-size: 1.6rem;
+}
+@media screen and (max-width: 1250px) {
+  .card-img-desktop {
+    display: none;
+  }
+  .card-img-mobile {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .contact__content {
+    gap: 4rem;
+    align-items: flex-start;
+  }
+  .content__left-col {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .card-img-mobile {
+    display: none;
+  }
+  .card-img-desktop {
+    display: block;
+  }
+
+  .gmb-asset1 {
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+  }
+  .gmb-asset2 {
+    display: none;
+  }
+  .stashIt-asset1 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .stashIt-asset2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .gmb-asset1 {
+    display: none;
+  }
+  .gmb-asset3 {
+    display: block;
+    bottom: -100px;
+  }
+
+  .stashIt-asset1 {
+    display: none;
+  }
+  .stashIt-asset3 {
+    display: block;
+    bottom: -40px;
+  }
+}

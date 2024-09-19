@@ -1,47 +1,191 @@
-body {
-  background-image: linear-gradient(
-    to right,
-    rgba(216, 65, 129, 0.5),
-    rgba(70, 155, 180, 0.5),
-    rgba(216, 65, 129, 0.5),
-    rgba(70, 155, 180, 0.5)
-  );
-
-  background-size: 270%;
-  animation: animate-gradient 20s linear infinite;
-  color: white;
+.timeline__figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes animate-gradient {
-  from {
-    background-position: 0% 50%;
+.timeline__figure div:nth-child(3) {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: transparent;
+  border: 5px solid black;
+  position: relative;
+}
+.timeline__figure div:nth-child(2) {
+  height: 2px;
+  width: 100%;
+  background: black;
+}
+
+.timeline__figure div:first-of-type {
+  width: 5px;
+  height: 30px;
+  background: black;
+  position: relative;
+}
+
+.timeline__boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 40px;
+}
+.icon {
+  width: 26px;
+}
+
+.box p {
+  margin-top: 10px;
+}
+
+.box__title {
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+  width: fit-content;
+}
+
+.box {
+  padding: 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  position: relative;
+  /* z-index: 2; */
+}
+
+.box::after {
+  z-index: -1;
+  content: "";
+  width: 2px;
+  height: 55px;
+  background: black;
+  position: absolute;
+  top: -55px;
+  right: 50%;
+}
+.timeline__figure div:first-of-type::after {
+  position: absolute;
+  content: "May 2023";
+  white-space: nowrap;
+  width: fit-content;
+  transform: rotate(90deg);
+  width: fit-content;
+  bottom: -66px;
+  right: -33px;
+}
+.timeline__figure div:nth-child(3)::after {
+  position: absolute;
+  bottom: -60px;
+  right: -18px;
+  content: "Present";
+  transform: rotate(90deg);
+}
+
+.project__tag {
+  display: flex;
+  gap: 1rem;
+
+  width: fit-content;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.project__actions {
+  text-align: center;
+  display: flex;
+  gap: 2rem;
+}
+.users__container {
+  display: flex;
+  gap: 2rem;
+}
+.users-box {
+  padding: 3% 6%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .users__container {
+    flex-direction: column;
   }
-  to {
-    background-position: 100% 50%;
+  .users-box {
+    padding: 8% 14%;
   }
 }
 
-.gmbLogoImg__container {
-  width: 450px;
+.users__details {
+  display: flex;
+  gap: 1rem;
+}
+.user-icon {
+  width: clamp(50px, 10vw, 60px);
 }
 
-.viewLive:hover {
-  color: white;
-  background: #28b1de;
-  border: 1px solid #28b1de;
-  transition: all 0.2s ease-in;
+.users__details__specifics {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
 }
+@media screen and (max-width: 1060px) {
+  .timeline__content .timeline__figure {
+    flex-direction: column-reverse;
+  }
+  .timeline__content .timeline__figure div:first-of-type {
+    width: 30px;
+    height: 5px;
+  }
 
-.next__project::after {
-  width: 45%;
-  filter: brightness(0) saturate(100%) invert(97%) sepia(0%) saturate(2%)
-    hue-rotate(255deg) brightness(109%) contrast(101%);
-}
-.next__project:hover::after {
-  right: -43%;
-}
-@media screen and (max-width: 1000px) {
-  .gmbLogoImg__container {
-    width: 100%;
+  .timeline__content .timeline__figure div:nth-child(2) {
+    height: 100%;
+    width: 2px;
+  }
+
+  .timeline__content .timeline__figure div:nth-child(3) {
+    width: 30px;
+    height: 30px;
+  }
+
+  .timeline__content .timeline__boxes {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .timeline__content {
+    display: flex;
+    gap: 2rem;
+
+    height: 600px;
+  }
+  .timeline__content .timeline__figure div:first-of-type::after {
+    position: absolute;
+    content: "May 2023";
+    transform: rotate(0deg);
+    bottom: -6px;
+    left: 50px;
+  }
+  .timeline__content .timeline__figure div:nth-child(3)::after {
+    bottom: 0px;
+    right: -80px;
+    content: "Present";
+    transform: rotate(0deg);
+  }
+  .timeline__boxes .box::after {
+    z-index: -1;
+    content: "";
+    width: 55px;
+    height: 2px;
+    background: black;
+    position: absolute;
+    right: auto;
+    left: -46px;
+    top: 50%;
   }
 }
