@@ -1,12 +1,18 @@
 const viewDesignBtn = document.querySelectorAll(".design-btn");
-let active = false;
-viewDesignBtn.forEach((btn) =>
+
+viewDesignBtn.forEach((btn) => {
+  let active = false;
   btn.addEventListener("click", function (e) {
+    const btnElement = e.target;
     active = !active;
-    const closestProject = e.target.closest(".project");
-    closestProject
-      .querySelector(".design-process-content")
-      .classList.toggle("active");
-    btn.textContent = active ? "Hide design process" : "Show design process";
-  })
-);
+    const closestProject = btnElement.closest(".project");
+    const designProcessContent = closestProject.querySelector(
+      ".design-process-content"
+    );
+
+    designProcessContent.classList.toggle("active");
+    btnElement.textContent = active
+      ? "Hide design process"
+      : "Show design process";
+  });
+});

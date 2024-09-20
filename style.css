@@ -17,6 +17,9 @@ a {
   text-decoration: none;
   color: black;
 }
+button {
+  color: black;
+}
 
 button:hover,
 a:hover {
