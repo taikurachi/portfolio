@@ -257,6 +257,7 @@ body {
 .project__layout-grid {
   display: flex;
   gap: clamp(0.2rem, 10vw, 1rem);
+  max-width: 1600px;
 }
 .video-container {
   position: relative;
@@ -292,6 +293,12 @@ body {
   text-align: center;
   display: flex;
   gap: 2rem;
+}
+
+@media screen and (min-width: 1600px) {
+  .padding-default {
+    padding: min(100px, 6%) min(100px, 8%);
+  }
 }
 @media screen and (max-width: 800px) {
   .project__layout-grid img,
@@ -330,7 +337,9 @@ body {
   display: flex;
   gap: 2rem;
   width: 70%;
+  max-width: 1600px;
 }
+
 /* ROLE CONTAINER */
 .projects__info__container {
   padding: clamp(20px, 10%, 40px);
@@ -406,7 +415,17 @@ body {
 .timeline-section {
   padding-bottom: 30px;
 }
+.section-container {
+  max-width: 1600px;
+  margin: auto;
+  width: 100%;
+}
 
+@media screen and (min-width: 1600px) {
+  .other-projects {
+    padding: 0 min(100px, 8%) min(100px, 8%);
+  }
+}
 @media screen and (max-width: 900px) {
   .flex-container {
     flex-direction: column;
