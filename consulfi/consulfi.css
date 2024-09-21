@@ -1,0 +1,38 @@
+.timeline__figure {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.timeline__figure div:nth-child(3) {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: transparent;
+  border: 5px solid black;
+  position: relative;
+}
+.timeline__figure div:nth-child(2) {
+  height: 2px;
+  width: 60%;
+  background: black;
+}
+
+.timeline__figure div:first-of-type {
+  width: 5px;
+  height: 30px;
+  background: black;
+  position: relative;
+}
+
+.timeline__figure div:first-of-type::after {
+  position: absolute;
+  content: "May 2023";
+  white-space: nowrap;
+  width: fit-content;
+  bottom: -40px;
+}
+.timeline__figure div:nth-child(3)::after {
+  position: absolute;
+  bottom: -40px;
+  content: "Present";
+}
