@@ -6,10 +6,23 @@
     <title>Taisei's Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="index.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+      rel="preload"
+      href="https://fonts.gstatic.com/s/outfit/v1/Outfit-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="https://fonts.gstatic.com/s/outfit/v1/Outfit-Bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -30,10 +43,10 @@
       href="portfolioFavIcons/favicon-16x16.png"
     />
     <link rel="manifest" href="portfolioFavIcons/site.webmanifest" />
-    <script src="https://unpkg.com/split-type"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <!-- <script src="https://unpkg.com/split-type"></script> -->
+    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script> -->
     <script defer src="script.js"></script>
   </head>
   <body>
@@ -235,20 +248,33 @@
             <div class="contact__details flex-column">
               <div class="contact__name">
                 <label class="p-md" for="name">Name:</label>
-                <input type="text" class="contact__info" name="name" required />
+                <input
+                  type="text"
+                  class="contact__info"
+                  id="name"
+                  name="name"
+                  required
+                  autocomplete="name"
+                />
               </div>
               <div class="contact__email">
                 <label class="p-md" for="email">Email:</label>
                 <input
+                  id="email"
                   type="text"
                   class="contact__info"
                   name="email"
                   required
+                  autocomplete="email"
                 />
               </div>
               <div class="contact__message">
                 <label class="p-md" for="message">Message:</label>
-                <textarea name="message" class="messageBox"></textarea>
+                <textarea
+                  name="message"
+                  id="message"
+                  class="messageBox"
+                ></textarea>
               </div>
               <button class="btn pastel-purple smooth-border" type="submit">
                 submit
