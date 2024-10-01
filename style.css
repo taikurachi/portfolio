@@ -10,7 +10,7 @@ html {
   overflow-x: hidden;
 }
 ul {
-  margin-left: 10%;
+  margin-left: clamp(20px, 10%, 50px);
 }
 a {
   text-decoration: none;
