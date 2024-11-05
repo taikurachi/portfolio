@@ -1,0 +1,12 @@
+.timeline__figure div:first-of-type::after {
+  position: absolute;
+  content: "October 2022";
+  white-space: nowrap;
+  width: fit-content;
+  bottom: -40px;
+}
+.timeline__figure div:nth-child(3)::after {
+  position: absolute;
+  bottom: -40px;
+  content: "Present";
+}

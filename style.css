@@ -345,6 +345,122 @@ body {
   content: "Present";
 }
 
+.experience__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: clamp(2rem, 10vw, 3rem);
+  margin-top: 30px;
+}
+
+.experience__card {
+  position: relative;
+  overflow: hidden;
+  min-width: 200px;
+}
+
+.card-display {
+  height: 200px;
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+.card-description {
+  transition: all 0.5s ease;
+  background: var(--bg-color);
+}
+
+.card-overflow-border {
+  overflow: hidden;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.card__text-content::after {
+  content: "View project →";
+  position: absolute;
+  bottom: -20px;
+  left: 20px;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+/* ALL ANIMATION CHANGES FROM CARD HOVER */
+.experience__card:hover {
+  .card-description {
+    transform: translateY(-30px);
+  }
+
+  .card-img-desktop {
+    transform: translate(40px, 90px);
+  }
+
+  .card-display {
+    transform: translateY(-30px);
+  }
+  .card__text-content::after {
+    opacity: 1;
+  }
+  .graphics-display__left-col {
+    transform: translateY(20px);
+  }
+  .graphics-display__right-col {
+    transform: translateY(10px);
+  }
+  .card-img-mobile {
+    transform: translateY(20px);
+  }
+}
+.card__text-content {
+  padding: 20px;
+}
+.job-title {
+  margin-top: 2px;
+}
+.job-description {
+  margin-top: 16px;
+}
+
+.card-img-desktop {
+  width: clamp(120px, 20vw, 600px);
+  transition: transform 0.5s ease;
+  transform: translate(40px, 40px);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 1310px) {
+  .experience__content {
+    grid-template-columns: 1fr 1fr;
+  }
+  .card-img-desktop {
+    width: 350px;
+    transform: translate(40px, 30px);
+  }
+}
+
+@media screen and (max-width: 1230px) {
+  .experience__card:hover {
+    .card__text-content::after {
+      opacity: 1;
+    }
+    .graphics-display__left-col {
+      transform: translateY(20px);
+    }
+    .graphics-display__right-col {
+      transform: translateY(10px);
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .experience__content {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media screen and (min-width: 1600px) {
   .padding-default {
     padding: min(100px, 6%) min(100px, 8%);

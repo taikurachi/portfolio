@@ -157,12 +157,18 @@
   font-size: 1.6rem;
 }
 
+@media screen and (max-width: 1310px) {
+  .experience__content {
+    grid-template-columns: 1fr 1fr;
+  }
+  .card-img-desktop {
+    width: 350px;
+    transform: translate(40px, 30px);
+  }
+}
+
 @media screen and (max-width: 1230px) {
   .experience__card:hover {
-    .card-img-desktop {
-      transform: translateY(340px);
-    }
-
     .card__text-content::after {
       opacity: 1;
     }
@@ -172,21 +178,6 @@
     .graphics-display__right-col {
       transform: translateY(10px);
     }
-    .card-img-mobile {
-      transform: translateY(20px);
-    }
-  }
-  .card-img-desktop {
-    width: clamp(120px, 70vw, 800px);
-    transform: translateY(300px);
-  }
-  .experience__content {
-  }
-  .card-img-mobile {
-    display: none;
-  }
-  .card-img-desktop {
-    display: block;
   }
 
   .gmb-asset1 {
@@ -208,29 +199,7 @@
 }
 
 @media screen and (max-width: 900px) {
-  .contact__content {
-    gap: 4rem;
-    align-items: flex-start;
-  }
-  .content__left-col {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .gmb-asset1 {
-    display: none;
-  }
-  .gmb-asset3 {
-    display: block;
-    bottom: -100px;
-  }
-
-  .stashIt-asset1 {
-    display: none;
-  }
-  .stashIt-asset3 {
-    display: block;
-    bottom: -40px;
+  .experience__content {
+    grid-template-columns: 1fr;
   }
 }
