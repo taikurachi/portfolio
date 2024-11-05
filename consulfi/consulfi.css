@@ -1,0 +1,13 @@
+.timeline__figure div:first-of-type::after {
+  position: absolute;
+  content: "May 2023";
+  white-space: nowrap;
+  width: fit-content;
+  bottom: -40px;
+}
+.timeline__figure div:nth-child(3)::after {
+  white-space: nowrap;
+  position: absolute;
+  bottom: -40px;
+  content: "Aug 2023";
+}
