@@ -1,0 +1,19 @@
+.audience-container {
+  padding: 30px;
+  border-radius: 10px;
+}
+.circle-outline {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid black;
+  text-align: center;
+  padding: 30px;
+}
+
+.circle-outline p {
+  width: 200px;
+}

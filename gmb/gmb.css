@@ -82,6 +82,13 @@
   transform: rotate(90deg);
 }
 
+.other-projects-container {
+  display: none;
+}
+
+.other-projects-btn {
+  margin: 5% 8%;
+}
 .users__container {
   display: flex;
   gap: 2rem;

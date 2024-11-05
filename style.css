@@ -9,7 +9,8 @@ body,
 html {
   overflow-x: hidden;
 }
-ul {
+ul,
+ol {
   margin-left: clamp(20px, 10%, 50px);
 }
 a {
@@ -199,7 +200,7 @@ body {
   box-shadow: var(--shadow-default);
 }
 .padding-default {
-  padding: 6% 8%;
+  padding: 0% 8% 6% 8%;
 }
 
 .gray-border {
@@ -295,6 +296,45 @@ body {
   gap: 2rem;
 }
 
+.timeline__figure {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.timeline__figure div:nth-child(3) {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: transparent;
+  border: 5px solid black;
+  position: relative;
+}
+.timeline__figure div:nth-child(2) {
+  height: 2px;
+  width: 60%;
+  background: black;
+}
+
+.timeline__figure div:first-of-type {
+  width: 5px;
+  height: 30px;
+  background: black;
+  position: relative;
+}
+
+.timeline__figure div:first-of-type::after {
+  position: absolute;
+  content: "May 2023";
+  white-space: nowrap;
+  width: fit-content;
+  bottom: -40px;
+}
+.timeline__figure div:nth-child(3)::after {
+  position: absolute;
+  bottom: -40px;
+  content: "Present";
+}
+
 @media screen and (min-width: 1600px) {
   .padding-default {
     padding: min(100px, 6%) min(100px, 8%);
@@ -387,9 +427,9 @@ body {
   gap: clamp(2rem, 10vw, 4rem);
 }
 
-.design-process-content {
-  display: none;
-}
+/* .design-process-content {
+  display: none; 
+} */
 
 .design-process-content.active {
   display: flex;
@@ -404,12 +444,6 @@ body {
 
 .project__small-img {
   width: 40%;
-}
-.other-projects {
-  padding: 0 8% 8%;
-}
-.other-projects .btn {
-  padding: 2% 4%;
 }
 
 .timeline-section {
