@@ -1,13 +1,13 @@
 .timeline__figure div:first-of-type::after {
   position: absolute;
-  content: "April 2023";
+  content: "Oct 2024";
   white-space: nowrap;
   width: fit-content;
   bottom: -40px;
 }
 .timeline__figure div:nth-child(3)::after {
-  white-space: nowrap;
   position: absolute;
+  white-space: nowrap;
   bottom: -40px;
-  content: "May 2023";
+  content: "Nov 2024";
 }

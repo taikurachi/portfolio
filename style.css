@@ -31,9 +31,12 @@ a:hover {
   --pastel-blue: #a4deff;
   --pastel-pink: #ffcaca;
   --pastel-purple: #d6bde7;
-  --pastel-green: #c9db96;
+  --pastel-yellow: #e1e88b;
+  --pastel-darkBlue: rgb(136, 171, 239);
+  --pastel-green: #afe8c8;
   --nyu-purple: #57068c;
   --gray-border: #f1f1f1;
+
   --shadow-default: 0px 11px 36px -5px rgba(0, 0, 0, 0.4);
 }
 body {
@@ -83,6 +86,13 @@ body {
   background: var(--pastel-blue);
 }
 
+.pastel-yellow {
+  background: var(--pastel-yellow);
+}
+
+.pastel-darkBlue {
+  background: var(--pastel-darkBlue);
+}
 .consulfi-blue {
   color: rgb(90, 187, 243);
 }

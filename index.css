@@ -35,9 +35,9 @@
 }
 
 .card__text-content::after {
-  content: "View projects →";
+  content: "View project →";
   position: absolute;
-  bottom: -10px;
+  bottom: -20px;
   left: 20px;
   opacity: 0;
   transition: all 0.5s ease;
@@ -73,7 +73,7 @@
   padding: 20px;
 }
 .job-title {
-  margin-top: 5px;
+  margin-top: 2px;
 }
 .job-description {
   margin-top: 16px;

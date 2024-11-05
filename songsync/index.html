@@ -18,7 +18,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GenEvo Case Study</title>
     <link rel="stylesheet" href="../style.css" />
-    <link rel="stylesheet" href="colorz.css" />
+    <link rel="stylesheet" href="songsync.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap"
       rel="stylesheet"
@@ -59,10 +59,11 @@
             alt="website icon"
             class="icon"
           />
-          <span class="p-sm">Typing game</span>
+          <span class="p-sm">Dynamic web application</span>
         </div>
         <h2 class="project__title header-lg">
-          Color typing game built using vanilla JS
+          Dynamic web application to display recently played songs and upcoming
+          concerts
         </h2>
         <div class="project__layout-grid">
           <div class="flex-container">
@@ -72,14 +73,14 @@
               autoplay
               loop
               playsinline
-              src="../images/colorz/colorz1.mp4"
-              alt="colorz demo"
+              src="../images/songsync/songsync3.mp4"
+              alt="songsync demo"
             ></video>
           </div>
         </div>
         <div class="project__actions">
           <a
-            href="https://github.com/taikurachi/colorz"
+            href="https://github.com/taikurachi/Songsync/tree/main"
             class="btn p-sm pastel-purple"
             >View code</a
           >
@@ -100,20 +101,27 @@
         >
           <h3 class="projects__info__heading header-sm">Tools</h3>
           <div class="projects__info__roles">
+            <span class="role">NextJS</span>
+            <span class="role">ReactJS</span>
             <span class="role">JavaScript</span>
             <span class="role">Figma</span>
-            <span class="role">HTML</span>
-            <span class="role">CSS</span>
+            <span class="role">CSS Modules</span>
+            <span class="role">Spotify REST API</span>
+            <span class="role">Ticketmaster REST API</span>
           </div>
         </div>
       </section>
       <section class="project__background spacing-default">
         <h2 class="header-md">Background</h2>
         <p class="p-sm">
-          When I was learning JavaScript, I built a game to explore DOM
-          manipulation and how to apply dynamic styling using JavaScript. Later,
-          I refactored the code to fit the MVC (Model-View-Controller)
-          architecture, enhancing the code structure and maintainability.
+          I used Spotify’s OAuth system to acquire an access token, which
+          allowed me to fetch the user’s recently played songs. After retrieving
+          the JSON data with song and artist details, I used each artist’s name
+          to make a request through a proxy route in Next.js, fetching related
+          events from the Ticketmaster API. Additionally, I implemented the
+          Color-Thief API to extract the dominant color from each song’s album
+          image, using this color palette to enhance the visual experience of
+          the web app.
         </p>
       </section>
       <section class="timeline-section">
