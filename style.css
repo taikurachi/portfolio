@@ -408,9 +408,6 @@ body {
   .graphics-display__right-col {
     transform: translateY(10px);
   }
-  .card-img-mobile {
-    transform: translateY(20px);
-  }
 }
 .card__text-content {
   padding: 20px;
@@ -421,7 +418,9 @@ body {
 .job-description {
   margin-top: 16px;
 }
-
+.card-img-mobile {
+  transition: transform 0.5s ease;
+}
 .card-img-desktop {
   width: clamp(120px, 20vw, 600px);
   transition: transform 0.5s ease;
@@ -464,6 +463,9 @@ body {
 @media screen and (min-width: 1600px) {
   .padding-default {
     padding: min(100px, 6%) min(100px, 8%);
+  }
+  .card-img-desktop {
+    width: 300px;
   }
 }
 @media screen and (max-width: 800px) {
@@ -552,10 +554,6 @@ body {
   flex-direction: column;
   gap: clamp(2rem, 10vw, 4rem);
 }
-
-/* .design-process-content {
-  display: none; 
-} */
 
 .design-process-content.active {
   display: flex;

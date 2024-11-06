@@ -1,5 +1,5 @@
 .hero__image-content img {
-  width: clamp(300px, 20vw, 400px);
+  width: clamp(280px, 20vw, 400px);
 }
 
 .experience__content {
@@ -44,31 +44,6 @@
 }
 
 /* ALL ANIMATION CHANGES FROM CARD HOVER */
-.experience__card:hover {
-  .card-description {
-    transform: translateY(-30px);
-  }
-
-  .card-img-desktop {
-    transform: translate(40px, 90px);
-  }
-
-  .card-display {
-    transform: translateY(-30px);
-  }
-  .card__text-content::after {
-    opacity: 1;
-  }
-  .graphics-display__left-col {
-    transform: translateY(20px);
-  }
-  .graphics-display__right-col {
-    transform: translateY(10px);
-  }
-  .card-img-mobile {
-    transform: translateY(20px);
-  }
-}
 .card__text-content {
   padding: 20px;
 }
@@ -77,55 +52,6 @@
 }
 .job-description {
   margin-top: 16px;
-}
-
-.card-img-desktop {
-  width: clamp(120px, 20vw, 600px);
-  transition: transform 0.5s ease;
-  transform: translate(40px, 40px);
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-.card-img-mobile {
-  width: clamp(180px, 20vw, 200px);
-  display: none;
-  position: absolute;
-  border-radius: 10px 0px;
-  /* transition: all 0.5s ease; */
-}
-.gmb-asset3 {
-  bottom: -150px;
-  right: -2px;
-}
-.stashIt-asset3 {
-  bottom: -90px;
-  right: -2px;
-}
-.stashIt-asset2 {
-  position: absolute;
-  bottom: -2px;
-  right: -2px;
-  width: 240px;
-  border-radius: 0 10px;
-}
-.stashIt-asset1 {
-  position: absolute;
-  bottom: -2px;
-  right: -2px;
-  /* width: 240px; */
-}
-/* .gmb-asset1 {
-  transform: translateY(-2px);
-  position: absolute;
-  bottom: -2px;
-  right: -2px;
-} */
-.gmb-asset2 {
-  position: absolute;
-  bottom: -20px;
-  right: 0;
-  /* width: 70%; */
 }
 
 .job-details {
@@ -172,29 +98,18 @@
     .card__text-content::after {
       opacity: 1;
     }
-    .graphics-display__left-col {
+    /* .graphics-display__left-col {
       transform: translateY(20px);
     }
     .graphics-display__right-col {
       transform: translateY(10px);
-    }
+    } */
   }
 
   .gmb-asset1 {
     position: absolute;
     bottom: -5px;
     right: 0;
-  }
-  .gmb-asset2 {
-    display: none;
-  }
-  .stashIt-asset1 {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-  }
-  .stashIt-asset2 {
-    display: none;
   }
 }
 
